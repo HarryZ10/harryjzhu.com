@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start -p $PORT",
+    "postinstall": "cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib ./public"
+  },
+  "dependencies": {
+    "framer-motion": "^6.3.3",
+    "next": "12.1.6",
+    "pspdfkit": "^2022.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-fetch-hook": "^1.9.5",
+    "react-icons": "^4.2.0",
+    "react-loader-spinner": "^6.0.0-0",
+    "sass": "^1.51.0",
+    "simplebar-react": "^2.3.7",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7"
+  }
+}
