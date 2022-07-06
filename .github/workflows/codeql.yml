@@ -7,11 +7,13 @@ on:
   schedule:
     - cron: "5 0 * * 2"
 
+paths:
+  - src
+paths-ignore:
+  - public
+
 jobs:
   analyze:
-    paths-ignore:
-      - 'public/pspdfkit-lib/*'
-      - 'public/pspdfkit-lib/**/*'
     name: Analyze
     runs-on: ubuntu-latest
     permissions:
