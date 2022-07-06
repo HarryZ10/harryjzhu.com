@@ -1,12 +1,10 @@
 name: "CodeQL"
 
 on:
-  push:
-    branches: [production, protected]
   pull_request:
     branches: [production]
     paths-ignore:
-      - '**/*.asm.js'
+      - 'public/**/*.asm.js'
   schedule:
     - cron: "5 0 * * 2"
 
@@ -35,5 +33,3 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
-        paths-ignore:
-          - '**/*.asm.js'
