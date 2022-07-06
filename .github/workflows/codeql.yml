@@ -5,8 +5,8 @@ on:
     branches: [production, protected]
   pull_request:
     branches: [production]
-    paths:
-      - src
+    paths-ignore:
+      - public/pspdfkit-lib/*.js
   schedule:
     - cron: "5 0 * * 2"
 
