@@ -1,7 +1,8 @@
 name: "CodeQL"
 
 on:
-  push: [production, protected]
+  push:
+    branches: [production, protected]
   pull_request:
     branches: [production]
   schedule:
