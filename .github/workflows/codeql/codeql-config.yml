@@ -1,4 +1,8 @@
 name: "My CodeQL config"
 
+disable-default-queries: false
+
+paths:
+  - src 
 paths-ignore:
   - public/pspdfkit-lib/**/*
