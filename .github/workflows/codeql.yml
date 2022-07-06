@@ -2,15 +2,13 @@ name: "CodeQL"
 
 on:
   push:
-    branches:
-      - "production"
+    branches: [production, protected]
+  pull_request:
+    branches: [production]
+    paths-ignore:
+      - public/**
   schedule:
     - cron: "5 0 * * 2"
-
-paths:
-  - src
-paths-ignore:
-  - public
 
 jobs:
   analyze:
@@ -37,4 +35,3 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
-        
