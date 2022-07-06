@@ -9,6 +9,9 @@ on:
 
 jobs:
   analyze:
+    paths-ignore:
+      - 'public/pspdfkit-lib/*'
+      - 'public/pspdfkit-lib/**/*'
     name: Analyze
     runs-on: ubuntu-latest
     permissions:
@@ -32,3 +35,4 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
+        
