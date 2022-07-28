@@ -1,9 +1,9 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
-import styled from 'styled-components';
+import { IoIosArrowDropdown } from "react-icons/io";
+import styled from "styled-components";
 
 export const Dot = styled.span`
-  color: #6DD8D0;
-  content: '.';
+  color: #6dd8d0;
+  content: ".";
 `;
 
 export const Container = styled.div`
@@ -31,7 +31,6 @@ export const Span = styled.span`
     padding-left: 6px;
     font-size: 2rem;
   }
-
 `;
 
 export const Div1 = styled.div`
@@ -91,12 +90,10 @@ export const NavLink = styled.a`
 
   &::before {
     content: "";
-    position: absolute;
     display: flex;
-    width: 2%;
+    width: 10px;
     justify-content: center;
     height: 2px;
-    top: 50px;
     background-color: #fff;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -105,7 +102,7 @@ export const NavLink = styled.a`
   &:hover::before {
     transform: scaleX(1);
   }
-  
+
   @media ${(props) => props.theme.breakpoints.sm} {
     &::before {
       display: none;
@@ -152,8 +149,8 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   display: flex;
   align-self: center;
   transition: 0.3s ease;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
+  opacity: ${({ isOpen }) => (isOpen ? "1" : ".75")};
+  transform: ${({ isOpen }) => (isOpen ? "scaleY(-1)" : "scaleY(1)")};
 
   &:hover {
     opacity: 1;
@@ -165,7 +162,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
-// Social Icons 
+// Social Icons
 export const SocialIcons = styled.a`
   transition: 0.3s ease;
   color: white;
@@ -175,6 +172,6 @@ export const SocialIcons = styled.a`
   &:hover {
     background-color: #212d45;
     transform: scale(1.2);
-    cursor: pointer; 
+    cursor: pointer;
   }
 `;
