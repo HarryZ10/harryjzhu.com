@@ -8,10 +8,11 @@ import { Container } from "./LayoutStyles";
 export const Layout = ({ children }) => {
   return (
     <Container>
+      <NotionAlert />
       <Header />
       <main>{children}</main>
       <Footer />
-      <NotionAlert />
+      {/* <NotionAlert /> */}
     </Container>
   );
 };
