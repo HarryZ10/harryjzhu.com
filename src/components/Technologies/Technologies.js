@@ -39,15 +39,15 @@ const Technologies = () => (
           <ListTitle>Web</ListTitle>
           <ListParagraph>
             <strong>Front-end Experience with</strong> <br />
-            React, Boostrap, CSS, Next, <br />
-            Material UI (MUI), Styled Components. <br />
+            React, Boostrap, CSS, Node, <br />
+            Material UI, Styled Components. <br />
           </ListParagraph>
           <br />
           <ListParagraph>
             <strong>Back-end Experience with</strong> <br />
             Python, Javascript, Node, <br />
             MongoDB, Rest APIs, GraphQL, <br />
-            C#, Unity, and Express <br />
+            C#, and Express <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -63,7 +63,7 @@ const Technologies = () => (
             Google Cloud Platform, Firebase, <br />
             Docker, Cloud Storage, Shell, <br />
             Identity Management, API, <br />
-            Container Security, Penetration Testing, and vulnerability scanning.{" "}
+            Container Security, and vulnerability scanning.
             <br />
           </ListParagraph>
         </ListContainer>
@@ -79,9 +79,9 @@ const Technologies = () => (
               Experience with <br />
             </strong>
             C/C++, Scala, Java, <br />
-            Splunk, PLSQL, VSCode, <br />
+            Splunk, MongoDB, Figma, <br />
             Git, Github, Heroku, and <br />
-            Web Deployment, Figma
+            Web Deployment, Unity
             <br />
           </ListParagraph>
         </ListContainer>

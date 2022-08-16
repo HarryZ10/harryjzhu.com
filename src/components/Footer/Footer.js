@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai'; //icon
+import { AiFillGithub, AiFillLinkedin, AiFillMediumCircle } from 'react-icons/ai'; //icon
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
@@ -9,13 +9,14 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Work Email</LinkTitle>
-          <LinkItem href='mailto:harry@foxacmw.com' target='_blank' rel='noopener noreferrer'>harry@foxacmw.com</LinkItem>
+          <LinkItem href="mailto:hzhu20@georgefox.edu" target='_blank' rel='noopener noreferrer'>hzhu20 at georgefox dot edu</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>
-            Creating software that builds communities and cultivates leaders.
+            Made from scratch using Next and React. <br />
+            Copyright © 2022. All rights reserved. <br />
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
@@ -25,11 +26,8 @@ const Footer = () => {
           <SocialIcons href="https://linkedin.com/in/harryjzhu" target='_blank' rel='noopener noreferrer'>
             <AiFillLinkedin size='3rem' />
           </SocialIcons>
-          <SocialIcons href="https://twitter.com/harryjzhu" target='_blank' rel='noopener noreferrer'>
-            <AiFillTwitterCircle size='3rem' />
-          </SocialIcons>
-          <SocialIcons href="https://instagram.com/harryjzhu" target='_blank' rel='noopener noreferrer'>
-            <AiFillInstagram size='3rem' />
+          <SocialIcons href="https://medium.com/@byharryzhu" target='_blank' rel='noopener noreferrer'>
+            <AiFillMediumCircle size='3rem' />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

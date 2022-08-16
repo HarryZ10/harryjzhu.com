@@ -32,6 +32,7 @@ export const SectionTitle = styled.h2`
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: ${(props) => props.projectHeading ? '52px' : '16px' };
   padding: ${(props) => props.main ? '28px 0 16px' : '0'};
@@ -56,7 +57,7 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-  max-width: 800px;
+  max-width: 900px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;

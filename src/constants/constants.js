@@ -1,33 +1,3 @@
-import React, { useEffect, useRef } from 'react';
-
-export function GetResumePDF() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    let instance, PSPDFKit;
-    (async function GCC11YEARS() {
-      PSPDFKit = await import("pspdfkit");
-
-      instance = await PSPDFKit.load({
-        container: containerRef.current,
-        document: "/resume.pdf",
-        baseUrl: `${window.location.protocol}//${window.location.host}/`
-      });
-
-      instance.setViewState(viewState => viewState.set("showToolbar", !viewState.showToolbar));
-    })();
-
-    return () => {
-      if (PSPDFKit && instance && instance.destroy) {
-        PSPDFKit && PSPDFKit.unload(containerRef.current);
-      }
-    }
-  }, []);
-
-  return <div ref={containerRef} style={{ height: "100vh", maxHeight: "50vh" }}/>
-}
-
-
 export const projects = [
   {
     title: '11 Years',
@@ -73,11 +43,6 @@ export const projects = [
     duties: "",
     accomplishments: "",
     userResearch: "",
-    img: [
-      '/images/11Y/1.png',
-      '/images/11Y/2.png',
-      '/images/11Y/3.png',
-    ],
   },
   {
     title: 'Pickabox',
