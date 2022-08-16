@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export function GCC11YEARS() {
+export function GetResumePDF() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ export function GCC11YEARS() {
 
       instance = await PSPDFKit.load({
         container: containerRef.current,
-        document: "/gdd19.pdf",
+        document: "/resume.pdf",
         baseUrl: `${window.location.protocol}//${window.location.host}/`
       });
 
@@ -26,35 +26,6 @@ export function GCC11YEARS() {
 
   return <div ref={containerRef} style={{ height: "100vh", maxHeight: "50vh" }}/>
 }
-
-
-export function GDD_2020() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    let instance, PSPDFKit;
-    (async function GCC11YEARS() {
-      PSPDFKit = await import("pspdfkit");
-
-      instance = await PSPDFKit.load({
-        container: containerRef.current,
-        document: "/gdd20.pdf",
-        baseUrl: `${window.location.protocol}//${window.location.host}/`
-      });
-
-      instance.setViewState(viewState => viewState.set("showToolbar", !viewState.showToolbar));
-    })();
-
-    return () => {
-      if (PSPDFKit && instance && instance.destroy) {
-        PSPDFKit && PSPDFKit.unload(containerRef.current);
-      }
-    }
-  }, []);
-
-  return <div ref={containerRef} style={{ height: "100vh", maxHeight: "50vh" }}/>
-}
-
 
 
 export const projects = [
@@ -65,7 +36,14 @@ export const projects = [
       tags: ['C#', 'Unity', 'Game Designer', 'Level Designer'],
     visit: 'https://gameheads.itch.io/11-years',
     id: 0,
-    pdf: true
+    duties: "",
+    accomplishments: "",
+    userResearch: "",
+    img: [
+      '/images/11Y/1.png',
+      '/images/11Y/2.png',
+      '/images/11Y/3.png',
+    ],
   },
   {
     title: 'Confined Indorms',
@@ -74,7 +52,14 @@ export const projects = [
     tags: ['C#', 'Unity', 'Programmer', 'Project Manager'],
     visit: 'https://gameheads.itch.io/confined-indorms',
     id: 1,
-    pdf: true
+    duties: "",
+    accomplishments: "",
+    userResearch: "",
+    img: [
+      '/images/11Y/1.png',
+      '/images/11Y/2.png',
+      '/images/11Y/3.png',
+    ],
   },
   {
     title: 'SpectrCare',
@@ -85,6 +70,14 @@ export const projects = [
     visit: 'https://www.youtube.com/watch?v=-Q0xte4u9N0',
     id: 2,
     summary: 'Summary',
+    duties: "",
+    accomplishments: "",
+    userResearch: "",
+    img: [
+      '/images/11Y/1.png',
+      '/images/11Y/2.png',
+      '/images/11Y/3.png',
+    ],
   },
   {
     title: 'Pickabox',
@@ -95,6 +88,14 @@ export const projects = [
     visit: 'https://devpost.com/software/pickabox',
     id: 3,
     summary: 'Pickabox is a user-friendly web application where everyday Wikipedia users dive deep and learn from API-generated informational articles',
+    duties: "",
+    accomplishments: "",
+    userResearch: "",
+    img: [
+      '/images/11Y/1.png',
+      '/images/11Y/2.png',
+      '/images/11Y/3.png',
+    ],
   },
   {
     title: 'ACM Code Jam v2',
@@ -104,5 +105,13 @@ export const projects = [
     visit: 'https://live.foxacmw.com',
     id: 4,
     summary: 'A weekend-long hackathon, hosted by ACM @ GFU, where students will work collaboratively on a team to build a technical project in 30 hours.',
+    duties: "",
+    accomplishments: "",
+    userResearch: "",
+    img: [
+      '/images/11Y/1.png',
+      '/images/11Y/2.png',
+      '/images/11Y/3.png',
+    ],
   }
 ];

@@ -1,15 +1,15 @@
 import React, { useRef } from 'react';
 import ProjectModal from './ProjectModal';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-
-import { BlogCard, CardInfo, ExternalLinks,
-         GridContainer, HeaderThree, HeaderThreeModal, Hr,Tag,
+import { Carousel } from 'react-responsive-carousel';
+import { BlogCard, CardInfo, ExternalLinks, HeaderThree, HeaderThreeModal, Hr,Tag,
          TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects, GCC11YEARS, GDD_2020 } from '../../constants/constants';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Projects() {
   //#region Refs
@@ -24,34 +24,66 @@ function Projects() {
     <Section id="projects">
 
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+      <SectionTitle main projectHeading>Projects</SectionTitle>
 
       {/* 11 Years */}
-      {projects[0].pdf && (
+      {projects[0].title && (
         <ProjectModal ref={project1Ref}>
-          <HeaderThreeModal>Game Design Document</HeaderThreeModal>
-          <GCC11YEARS />
+          <HeaderThreeModal>Responsibilities</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[0].duties}
+          </CardInfo>
+          <HeaderThreeModal>Accomplishments</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[0].accomplishments}
+          </CardInfo>
+          <HeaderThreeModal>User Research</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[0].userResearch}
+          </CardInfo>
+          <HeaderThreeModal>Level Design Drafts</HeaderThreeModal>
+          <Img src={projects[0].img} alt={projects[0].title} />
         </ProjectModal>
       )}
 
       {/* Confined Indorms */}
-      {projects[1].pdf && (
+      {projects[1].title && (
         <ProjectModal ref={project2Ref}>
-          <HeaderThreeModal>Game Design Document</HeaderThreeModal>
-          <GDD_2020 />
+          <HeaderThreeModal>Responsibilities</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[1].duties}
+          </CardInfo>
+          <HeaderThreeModal>Accomplishments</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[1].accomplishments}
+          </CardInfo>
+          <HeaderThreeModal>User Research</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[1].userResearch}
+          </CardInfo>
+          <HeaderThreeModal>Media</HeaderThreeModal>
+          <Img src={projects[1].img} alt={projects[1].title} />
         </ProjectModal>
       )}
 
       {/* SpectrCare */}
-      {projects[2].summary && (
+      {projects[2].title && (
         <ProjectModal ref={project3Ref} id="scrollbox">
           <SimpleBar style={{ border: '10px', maxHeight: '500px' }}>
-            <div>
-              <HeaderThreeModal>Summary</HeaderThreeModal>
-              <CardInfo modal>
-                {projects[2].summary}
-              </CardInfo>
-            </div>
+            <HeaderThreeModal>Responsibilities</HeaderThreeModal>
+            <CardInfo modal>
+              {projects[2].responibilities}
+            </CardInfo>
+            <HeaderThreeModal>Accomplishments</HeaderThreeModal>
+            <CardInfo modal>
+              {projects[2].accomplishments}
+            </CardInfo>
+            <HeaderThreeModal>User Research</HeaderThreeModal>
+            <CardInfo modal>
+              {projects[2].userResearch}
+            </CardInfo>
+            <HeaderThreeModal>Media</HeaderThreeModal>
+            <Img src={projects[2].img} alt={projects[2].title} />
           </SimpleBar>
         </ProjectModal>
       )}
@@ -61,14 +93,20 @@ function Projects() {
       {projects[3].summary && (
       <ProjectModal ref={project4Ref} id="scrollbox">
         <SimpleBar style={{ border: '10px', maxHeight: '500px' }}>
-          <div>
-
-            <HeaderThreeModal>Summary</HeaderThreeModal>
-            <CardInfo modal>
-              {projects[3].summary}
-            </CardInfo>
-
-          </div>
+          <HeaderThreeModal>Responsibilities</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[3].responibilities}
+          </CardInfo>
+          <HeaderThreeModal>Accomplishments</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[3].accomplishments}
+          </CardInfo>
+          <HeaderThreeModal>User Research</HeaderThreeModal>
+          <CardInfo modal>
+            {projects[3].userResearch}
+          </CardInfo>
+          <HeaderThreeModal>Media</HeaderThreeModal>
+          <Img src={projects[3].img} alt={projects[3].title} />
         </SimpleBar>
       </ProjectModal>
       
@@ -78,74 +116,45 @@ function Projects() {
       {projects[4].summary && (
         <ProjectModal ref={project5Ref} id="scrollbox">
           <SimpleBar style={{ border: '10px', maxHeight: '500px' }}>
-            <div>
-             
-              <HeaderThreeModal>Summary</HeaderThreeModal>
-              <CardInfo modal>
-                {projects[4].summary}
-              </CardInfo>
-
-            </div>
+            <HeaderThreeModal>Responsibilities</HeaderThreeModal>
+            <CardInfo modal>
+              {projects[4].responibilities}
+            </CardInfo>
+            <HeaderThreeModal>Accomplishments</HeaderThreeModal>
+            <CardInfo modal>
+              {projects[4].accomplishments}
+            </CardInfo>
+            <HeaderThreeModal>User Research</HeaderThreeModal>
+            <CardInfo modal>
+              {projects[4].userResearch}
+            </CardInfo>
+            <HeaderThreeModal>Media</HeaderThreeModal>
+            <Img src={projects[4].img} alt={projects[4].title} />
           </SimpleBar>
         </ProjectModal>
 
       )}
 
-      <GridContainer>
+      <Carousel showArrows={true} className="carousel-projects">
         {/* Mapping through projects array and creating a card for each project */}
-        {projects.map(({id , description, image, title, tags, source, visit }) => (
-
-          // Creating a card for each project
+        {projects.map(({id , description, image, title, tags, source, visit, summary, duties, accomplishments, userResearch, img }) => (
           <BlogCard key={id}>
-
-            <Img src={image} style={{ cursor: 'pointer' }} onClick={() => {
-                //#region Setting the current project to the one that was clicked
-                if (id === 0) {
-                  project1Ref.current.open();
-                } else if (id === 1) {
-                  project2Ref.current.open();
-                } else if (id === 2) {
-                  project3Ref.current.open();
-                } else if (id === 3) {
-                  project4Ref.current.open();
-                } else if (id === 4) {
-                  project5Ref.current.open();
-                }
-                //#endregion
-              }} />
-
+            <Img src={image} />
             <TitleContent>
-              <HeaderThree title onClick={() => {
-                //#region Setting the current project to the one that was clicked
-                if (id === 0) {
-                  project1Ref.current.open();
-                } else if (id === 1) {
-                  project2Ref.current.open();
-                } else if (id === 2) {
-                  project3Ref.current.open();
-                } else if (id === 3) {
-                  project4Ref.current.open();
-                } else if (id === 4) {
-                  project5Ref.current.open();
-                }
-                //#endregion
-              }}>
+              <HeaderThree title onClick={() => { turnModalOn(id) }}>
                 <AiOutlineArrowRight style={{ paddingTop:'10px' }}/> {title} 
-              </HeaderThree> {/* Title of the project */}
+              </HeaderThree>
               <Hr />
             </TitleContent>
 
             {/* Description */}
             <CardInfo>{description}</CardInfo>
 
-            <div>
-              <TitleContent style={{ paddingTop: '20px' }}>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
-            </div>
+            <TagList>
+              {tags.map((tag, i) => (
+                <Tag key={i}>{tag}</Tag>
+              ))}
+            </TagList>
 
             {/* External Links */}
             <UtilityList>
@@ -156,10 +165,25 @@ function Projects() {
           </BlogCard>
         ))}
 
-        </GridContainer>
+        </Carousel>
     </Section>
   );
 
+
+  function turnModalOn(id)
+  {
+    if (id === 0) {
+      project1Ref.current.open();
+    } else if (id === 1) {
+      project2Ref.current.open();
+    } else if (id === 2) {
+      project3Ref.current.open();
+    } else if (id === 3) {
+      project4Ref.current.open();
+    } else if (id === 4) {
+      project5Ref.current.open();
+    }
+  }
 }
 
 

@@ -3,9 +3,8 @@ import React from "react";
 
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
-  AiFillTwitterCircle,
+  AiFillMediumCircle
 } from "react-icons/ai";
 import {
   Span,
@@ -69,18 +68,11 @@ const Header = () => (
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
       <SocialIcons
-        href="https://twitter.com/harryjzhu"
+        href="https://medium.com/@byharryzhu"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <AiFillTwitterCircle size="3rem" />
-      </SocialIcons>
-      <SocialIcons
-        href="https://instagram.com/harryjzhu"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <AiFillInstagram size="3rem" />
+        <AiFillMediumCircle size="3rem" />
       </SocialIcons>
     </Div3>
   </Container>
