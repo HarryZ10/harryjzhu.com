@@ -14,7 +14,7 @@ const Hero = (props) => (
         I'm an aspiring design-focused and data-driven software engineer based in the Bay Area and I'm currently looking for a new challenge.
       </SectionText>
       <Button onClick= {() => location.href = '#about'}>
-        Learn More
+        Contact Me
       </Button>
     </LeftSection>
   </Section>

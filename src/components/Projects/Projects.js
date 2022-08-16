@@ -83,7 +83,7 @@ function Projects() {
               {projects[2].userResearch}
             </CardInfo>
             <HeaderThreeModal>Media</HeaderThreeModal>
-            <Img src={projects[2].img} alt={projects[2].title} />
+            {/* <Img src={projects[2].img} alt={projects[2].title} /> */}
           </SimpleBar>
         </ProjectModal>
       )}
