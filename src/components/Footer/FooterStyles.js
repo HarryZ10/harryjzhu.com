@@ -21,7 +21,7 @@ export const LinkItem = styled.a`
   transition: 0.3s ease;
   position: relative;
   left: 0;
-  width: 100vw;
+  width: 450px;
 
   &:hover {
     color: #fff;
