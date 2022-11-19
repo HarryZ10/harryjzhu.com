@@ -4,6 +4,7 @@ import React from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
+  AiFillInfoCircle,
   // AiFillMediumCircle,
 } from "react-icons/ai";
 import {
@@ -64,6 +65,13 @@ const Header = () => (
       >
         <AiFillMediumCircle size="3rem" />
       </SocialIcons> */}
+      <SocialIcons
+        href="https://iam.harryjzhu.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AiFillInfoCircle size="3rem" />
+      </SocialIcons>
     </Div3>
   </Container>
 );

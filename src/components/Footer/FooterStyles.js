@@ -32,6 +32,7 @@ export const LinkItem = styled.a`
     font-size: 16px;
     line-height: 28px;
     display: flex;
+    width: 250px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -39,6 +40,7 @@ export const LinkItem = styled.a`
     margin-bottom: 8px;
     display: flex;
     align-items: center;
+    width: 250px;
   }
 `;
 
