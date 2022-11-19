@@ -4,7 +4,7 @@ import React from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillMediumCircle
+  // AiFillMediumCircle,
 } from "react-icons/ai";
 import {
   Span,
@@ -42,11 +42,6 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>
-      </li>
-      <li>
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
@@ -67,13 +62,13 @@ const Header = () => (
       >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons
+      {/* <SocialIcons
         href="https://medium.com/@byharryzhu"
         target="_blank"
         rel="noopener noreferrer"
       >
         <AiFillMediumCircle size="3rem" />
-      </SocialIcons>
+      </SocialIcons> */}
     </Div3>
   </Container>
 );
