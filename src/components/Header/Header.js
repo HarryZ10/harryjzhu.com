@@ -35,18 +35,13 @@ const Header = () => (
         </a>
       </Link>
     </Div1>
-    <Div2>
+    {/* <Div2>
       <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
+        <Link href="/resume.pdf">
+          <NavLink>See Resumé</NavLink>
         </Link>
       </li>
-      <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
-        </Link>
-      </li>
-    </Div2>
+    </Div2> */}
     <Div3>
       <SocialIcons
         href="https://github.com/HarryZ10"
