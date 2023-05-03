@@ -12,7 +12,6 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.2",
-    "@next/swc-darwin-arm64": "^13.3.4",
     "bootstrap": "^5.2.0",
     "framer-motion": "^6.3.3",
     "next": "12.1.6",
@@ -27,5 +26,8 @@
     "simplebar-react": "^2.3.7",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "@next/swc-darwin-arm64": "^13.3.4"
   }
 }
