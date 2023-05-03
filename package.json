@@ -29,5 +29,9 @@
   },
   "devDependencies": {
     "@next/swc-darwin-arm64": "^13.3.4"
+  },
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.11.0"
   }
 }
