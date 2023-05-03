@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+.project-image {
+
+  // change image offset to bottom
+  background-position: center top;
+}
+
 
 .modal-backdrop {
   position: fixed;

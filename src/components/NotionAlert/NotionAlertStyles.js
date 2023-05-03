@@ -4,15 +4,14 @@ export const Container = styled.div`
   display: flex;
   padding: 2rem;
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.14);
   position: relative;
   bottom: 0;
   z-index: 100;
 `;
 
 export const Span = styled.span`
-  font-size: 1.5rem;
-  color: red;
+  color: white;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding-left: 6px;
@@ -21,14 +20,14 @@ export const Span = styled.span`
 `;
 
 export const Text = styled.div`
-  width: 150px;
   margin: 0 auto;
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
     // center text
     text-align: center;
   }

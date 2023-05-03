@@ -27,122 +27,61 @@ function Projects() {
       <SectionTitle main projectHeading>Projects</SectionTitle>
 
       {/* 11 Years */}
-      {projects[0].title && (
-        <ProjectModal ref={project1Ref}>
-          <HeaderThreeModal>Responsibilities</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[0].duties}
-          </CardInfo>
-          <HeaderThreeModal>Accomplishments</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[0].accomplishments}
-          </CardInfo>
-          <HeaderThreeModal>User Research</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[0].userResearch}
-          </CardInfo>
-          <HeaderThreeModal>Level Design Drafts</HeaderThreeModal>
-          <Img src={projects[0].img} alt={projects[0].title} />
-        </ProjectModal>
-      )}
+      {projects.map(({title, duties, accomplishments, userResearch, img}, index) => (
+        <ProjectModal ref={index === 0 ? project1Ref : index === 1 ? project2Ref : index === 2 ? project3Ref : index === 3 ? project4Ref : project5Ref}>
 
-      {/* Confined Indorms */}
-      {projects[1].title && (
-        <ProjectModal ref={project2Ref}>
-          <HeaderThreeModal>Responsibilities</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[1].duties}
-          </CardInfo>
-          <HeaderThreeModal>Accomplishments</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[1].accomplishments}
-          </CardInfo>
-          <HeaderThreeModal>User Research</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[1].userResearch}
-          </CardInfo>
-          <HeaderThreeModal>Media</HeaderThreeModal>
-          <Img src={projects[1].img} alt={projects[1].title} />
-        </ProjectModal>
-      )}
-
-      {/* SpectrCare */}
-      {projects[2].title && (
-        <ProjectModal ref={project3Ref} id="scrollbox">
-          <SimpleBar style={{ border: '10px', maxHeight: '500px' }}>
+          {duties !== undefined && (
+            <>
             <HeaderThreeModal>Responsibilities</HeaderThreeModal>
             <CardInfo modal>
-              {projects[2].responibilities}
-            </CardInfo>
+              {duties}
+            </CardInfo>  
+            </>
+          )}
+
+          {accomplishments !== undefined && (
+            <>
             <HeaderThreeModal>Accomplishments</HeaderThreeModal>
             <CardInfo modal>
-              {projects[2].accomplishments}
+              {accomplishments}
             </CardInfo>
+            </>
+          )}
+
+          {userResearch && userResearch.map((research, index) => (
+            <>
             <HeaderThreeModal>User Research</HeaderThreeModal>
-            <CardInfo modal>
-              {projects[2].userResearch}
+            <CardInfo modal key={index}>
+              {research}
             </CardInfo>
-            <HeaderThreeModal>Media</HeaderThreeModal>
-            {/* <Img src={projects[2].img} alt={projects[2].title} /> */}
-          </SimpleBar>
+            </>
+          ))}
+
+          {img && img.map((image, index) => (
+            <>
+            <HeaderThreeModal>Level Design Drafts</HeaderThreeModal>
+            <Img key={index} src={image} />
+            </>
+          ))}
         </ProjectModal>
-      )}
+      ))}
 
-
-      {/* Pickabox */}
-      {projects[3].summary && (
-      <ProjectModal ref={project4Ref} id="scrollbox">
-        <SimpleBar style={{ border: '10px', maxHeight: '500px' }}>
-          <HeaderThreeModal>Responsibilities</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[3].responibilities}
-          </CardInfo>
-          <HeaderThreeModal>Accomplishments</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[3].accomplishments}
-          </CardInfo>
-          <HeaderThreeModal>User Research</HeaderThreeModal>
-          <CardInfo modal>
-            {projects[3].userResearch}
-          </CardInfo>
-          <HeaderThreeModal>Media</HeaderThreeModal>
-          <Img src={projects[3].img} alt={projects[3].title} />
-        </SimpleBar>
-      </ProjectModal>
-      
-      )}
-
-      {/* ACM Code Jam v2 */}
-      {projects[4].summary && (
-        <ProjectModal ref={project5Ref} id="scrollbox">
-          <SimpleBar style={{ border: '10px', maxHeight: '500px' }}>
-            <HeaderThreeModal>Responsibilities</HeaderThreeModal>
-            <CardInfo modal>
-              {projects[4].responibilities}
-            </CardInfo>
-            <HeaderThreeModal>Accomplishments</HeaderThreeModal>
-            <CardInfo modal>
-              {projects[4].accomplishments}
-            </CardInfo>
-            <HeaderThreeModal>User Research</HeaderThreeModal>
-            <CardInfo modal>
-              {projects[4].userResearch}
-            </CardInfo>
-            <HeaderThreeModal>Media</HeaderThreeModal>
-            <Img src={projects[4].img} alt={projects[4].title} />
-          </SimpleBar>
-        </ProjectModal>
-
-      )}
 
       <Carousel showArrows={true} className="carousel-projects">
         {/* Mapping through projects array and creating a card for each project */}
         {projects.map(({id , description, image, title, tags, source, visit, summary, duties, accomplishments, userResearch, img }) => (
           <BlogCard key={id}>
-            <Img src={image} />
+            
+            {/* if image is not undefined, then display image */}
+            {image !== undefined && (
+              
+              <Img className='project-image' src={image} />
+            )}
+
             <TitleContent>
               <HeaderThree title onClick={() => { turnModalOn(id) }}>
-                <AiOutlineArrowRight style={{ paddingTop:'10px' }}/> {title} 
+                {/* <AiOutlineArrowRight style={{ paddingTop:'10px' }}/>  */}
+                {title} 
               </HeaderThree>
               <Hr />
             </TitleContent>

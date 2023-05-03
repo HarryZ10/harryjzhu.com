@@ -14,15 +14,13 @@ const NotionAlert = ({ isVisible }) => {
       interval = setInterval(() => {
         setProgress((prev) => prev + 1);
       }, 50);
-    } else {
-      clearInterval(interval);
     }
   }, [running]);
 
   useEffect(() => {
     if (progress === 100) {
       setRunning(false);
-      clearInterval(interval);
+      // clearInterval(interval);
     }
   }, [progress]);
 
@@ -51,7 +49,7 @@ const NotionAlert = ({ isVisible }) => {
               <Container>
                 <Text>
                   <p>
-                    <Span>🚨 Work In Progress: </Span>Project specifications
+                    <Span>Thanks for visiting my portfolio!</Span>
                   </p>
                 </Text>
               </Container>
