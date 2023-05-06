@@ -25,7 +25,9 @@
     "sass": "^1.51.0",
     "simplebar-react": "^2.3.7",
     "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "three": "^0.152.2",
+    "threejs-toys": "^0.0.8"
   },
   "engines": {
     "node": "16.15.1",

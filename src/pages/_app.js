@@ -1,8 +1,9 @@
 import Theme from "../styles/theme";
 import Head from "next/head";
-import "../styles/Projects.scss";
+import "../styles/global.scss";
 
 export default function App({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -37,7 +38,7 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <Theme>
-        <Component {...pageProps} />
+        <Component id="app" {...pageProps} />
       </Theme>
     </>
   );
