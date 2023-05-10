@@ -12,8 +12,8 @@ const Home = () => {
       <Section grid>
         <Hero />
       </Section>
-      <Projects />
       <Experiences />
+      <Projects />
       <Timeline />
     </Layout>
   );

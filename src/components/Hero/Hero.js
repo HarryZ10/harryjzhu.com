@@ -8,10 +8,9 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, FirstName } from "./HeroStyles";
 import FadeIn from "../FadeIn/FadeIn";
-import { Fade } from "@mui/material";
 
 const Hero = (props) => (
-  <Section row nopadding>
+  <Section row nopadding blankSpace>
     <LeftSection>
       <FadeIn>
         <SectionTitle main center>

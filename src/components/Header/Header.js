@@ -21,29 +21,6 @@ import {
 
 const Header = () => (
   <Container>
-    <Div1>
-      <Link href={"/"}>
-        <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        >
-          <Span>
-            Harry Zhu<Dot>.</Dot>
-          </Span>
-        </a>
-      </Link>
-    </Div1>
-    {/* <Div2>
-      <li>
-        <Link href="/resume.pdf">
-          <NavLink>See Resumé</NavLink>
-        </Link>
-      </li>
-    </Div2> */}
     <Div3>
       <SocialIcons
         href="https://github.com/HarryZ10"
