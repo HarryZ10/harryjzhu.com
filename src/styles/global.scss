@@ -4,6 +4,18 @@
   --cursor-outline-shade: 0.3;
   --cursor-size: 20px;
   --cursor-outline-size: 22px;
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --slate: rgba(255, 255, 255, 0.5);
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green-bright: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --light-blue: #9cc9e3;
 }
 
 html,
@@ -260,4 +272,124 @@ body * {
   width: var(--cursor-outline-size);
   height: var(--cursor-outline-size);
   background: linear-gradient(270deg, rgba(255, 173, 199, 0.4) 0%, rgba(148, 93, 214, 0.4) 100%);
+}
+
+.MuiTabs-indicator {
+  background-color: #7dc0ff !important;
+}
+
+.Mui-selected {
+  color: #7dc0ff !important;
+}
+
+#experience {
+  padding-left: 15%;
+  min-height: 60vh;
+}
+
+.experience-job-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--lightest-slate);
+}
+
+.experience-job-company {
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.experience-job-duration {
+  font-size: 16px;
+  color: var(--slate);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.job-description li::before {
+  content: "▹    ";
+  color: var(--light-blue);
+  position: absolute;
+  left: 0;
+}
+
+.job-description li {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 16px;
+  font-size: 15px;
+  color: var(--slate);
+}
+
+.job-description {
+  padding-top: 24px;
+  max-width: 650px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+}
+
+.job-description a,
+.job-description b {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#vertical-tabpanel {
+  margin-top: -28px;
+  padding-left: 25px;
+}
+
+.MuiTab-wrapper {
+  font-size: 20px;
+  text-align: left;
+  align-items: flex-start !important;
+  font-family: "font-family: "Space Grotesk", sans-serif;", sans-serif;
+}
+
+.MuiButtonBase-root {
+  outline: none !important;
+  font-family: "font-family: "Space Grotesk", sans-serif;", sans-serif;
+  color: var(--slate) !important;
+  font-size: 12px !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+  width: 250px !important;
+  font-weight: 100 !important;
+  letter-spacing: 1.05px !important;
+}
+
+.MuiButtonBase-root:focus {
+  color: var(--light-blue) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #experience {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .experience-job-title {
+    font-size: 22px;
+  }
+
+  .experience-job-company {
+    font-size: 22px;
+  }
+}
+
+
+/* Animation */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }

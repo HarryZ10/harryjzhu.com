@@ -6,8 +6,7 @@ import { BlogCard, CardInfo, ExternalLinks, HeaderThree, HeaderThreeModal, Hr,Ta
          TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects, GCC11YEARS, GDD_2020 } from '../../constants/constants';
-import SimpleBar from 'simplebar-react';
+import { projects } from '../../constants/constants';
 import 'simplebar/dist/simplebar.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
