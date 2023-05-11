@@ -24,6 +24,8 @@ export const BlogCard = styled.div`
   margin-bottom: 3.6rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    padding-top: 0 !important;
+    margin-top: 3rem !important;
     width: 98%;
   }
 `;
