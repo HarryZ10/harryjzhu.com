@@ -1,5 +1,5 @@
 import React from "react";
-
+import dynamic from "next/dynamic";
 import {
   Section,
   SectionText,
@@ -8,10 +8,15 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, FirstName } from "./HeroStyles";
 import FadeIn from "../FadeIn/FadeIn";
+const SkeletalCircle = dynamic(
+  () => import("../P5SkeletalCircle/P5SkeletalCircle"),
+  { ssr: false }
+)
 
 const Hero = (props) => (
   <Section row nopadding blankSpace>
     <LeftSection>
+      <SkeletalCircle />
       <FadeIn>
         <SectionTitle main center>
           Hi, I'm <FirstName>Harry</FirstName>.
