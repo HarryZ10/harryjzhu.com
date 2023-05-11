@@ -64,7 +64,7 @@ export default function Experiences() {
   };
 
   const experienceItems = {
-    'George Fox': {
+    "George Fox": {
       jobTitle: "Full-Stack Web Developer Intern @",
       duration: "AUG 2021 - PRESENT",
       desc: [
@@ -72,6 +72,13 @@ export default function Experiences() {
         "Created large-scale content using CSS, HTML, and Apache Velocity (Java) for the University website",
         "Updated 95+ webpages in response to more than 106 stakeholders' requests to implement new content and styling in accordance with their acceptance criteria",
         "Demonstrated collaboration and communication skills that influenced the reduction of the product backlog by 75%"
+      ]
+    },
+    "CS Dept - GFU": {
+      "jobTitle": "Computer Science Teaching Assistant @",
+      "duration": "AUG 2022 - PRESENT",
+      "desc": [
+        "Tutored and monitored performance of students about introductory computer science concepts such as Data Structures, Relational Databases, Object-Oriented Design, and Analysis of Algorithms. Languages composed of Python, Java, Scala, and C/C++."
       ]
     },
     Recidiviz: {
@@ -127,6 +134,16 @@ export default function Experiences() {
         "Queried and extracted 10,000+ PPI, water consumption per day, wastewater usage, and finance charges from the organizational customer database using SQL and PL/SQL",
         "Performed critical data entry for edge cases on the jurisdiction border of the Utility's district, along with additional research to populate 3,000+ cells regarding tax information and APN values",
         "Contributed to a medium-risk research project by reviewing 200+ physical records in the Archival department, marking 50+ keywords and phrases for investigative processes into executive leadership and their legislative and business actions"
+      ]
+    },
+    "College Track": {
+      jobTitle: "Administrative Intern @",
+      duration: "JAN 2017 - JUNE 2017",
+      desc: [
+        "Conducted research and compiled student data for academic program evaluations, resulting in improved program efficiency and effectiveness",
+        "Organized physical records chronologically, resulting in a 50% improvement in retrieval time and a 100% decrease of outdated documents",
+        "Categorized 30,000+ emails that was in the director's inbox using relevant labels, resulting in improved email management and a 50% reduction in response time.",
+        "Surveyed 20+ laptop & electronic resources, leading to identification of areas for optimization"
       ]
     }
   };
