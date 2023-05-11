@@ -66,7 +66,7 @@ function Projects() {
       ))}
 
 
-      <Carousel showArrows={true} className="carousel-projects">
+      <Carousel showArrows={true} className="carousel-projects" showStatus={false}>
         {/* Mapping through projects array and creating a card for each project */}
         {projects.map(({id , description, image, title, tags, source, visit, summary, duties, accomplishments, userResearch, img }) => (
           <BlogCard key={id}>
@@ -82,7 +82,7 @@ function Projects() {
                 {/* <AiOutlineArrowRight style={{ paddingTop:'10px' }}/>  */}
                 {title} 
               </HeaderThree>
-              <Hr />
+              {/* <Hr /> */}
             </TitleContent>
 
             {/* Description */}

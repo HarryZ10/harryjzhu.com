@@ -27,10 +27,54 @@ html *,
 body * {
   cursor: none;
 }
-
+f
 .carousel-projects {
   width: 75%;
   margin: 0 auto;
+
+  // mobile 425
+  @media (max-width: 425px) {
+    width: 99%;
+  }
+}
+
+#projects {
+  padding-top: 6.6rem;
+}
+
+.carousel .control-prev.control-arrow:before {
+    color: #57dbff !important;
+    border-right: 0 !important;
+    content: "《" !important;
+    font-size: 4rem;
+    padding-bottom: 10rem;
+
+    // small screens 475
+    @media (max-width: 475px) {
+      display: none !important;
+    }
+}
+
+.carousel .control-next.control-arrow:before {
+    color: #57dbff !important;
+    border-left: 0 !important;
+    content: "》" !important;
+    font-size: 4rem;
+    padding-bottom: 10rem;
+
+    // small screens 475
+    @media (max-width: 475px) {
+      display: none !important;
+    }
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}
+
+.control-arrow:hover {
+    opacity: .9 !important;
 }
 
 .project-image {
@@ -49,6 +93,10 @@ body * {
   z-index: 1040;
 }
 
+.modal-content-wrapper::-webkit-scrollbar {
+  display: none !important;
+}
+
 .modal-content-wrapper {
   position: fixed;
   width: 90%;
@@ -64,6 +112,11 @@ body * {
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(182, 202, 224, 0.856);
   z-index: 1050;
+  overflow: scroll;
+
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  overflow: -moz-scrollbars-none !important; /* Firefox */
 
   // tablet & desktop
   @media (max-width: 768px) {
@@ -72,7 +125,16 @@ body * {
 
   // mobile 425
   @media (max-width: 425px) {
-    width: 80%;
+    width: 97%;
+    max-height: 90%;
+    min-height: 40%;
+    height: 90%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 0.09rem;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -251,7 +313,7 @@ body * {
 
 #cursor-dot,
 #cursor-dot-outline {
-  z-index: 999;
+  z-index: 1100;
   pointer-events: none;
   position: absolute;
   top: 50%;
@@ -292,6 +354,10 @@ body * {
   font-weight: bold;
   font-family: "Space Grotesk", sans-serif;
   color: var(--lightest-slate);
+
+  @media (max-width: 425px) {
+    font-size: 13px !important;
+  }
 }
 
 .experience-job-company {
@@ -299,12 +365,20 @@ body * {
   font-family: "Space Grotesk", sans-serif;
   color: var(--light-blue);
   font-weight: bold;
+
+  @media (max-width: 425px) {
+    font-size: 13px !important;
+  }
 }
 
 .experience-job-duration {
   font-size: 16px;
   color: var(--slate);
   font-family: "Space Grotesk", sans-serif;
+
+  @media (max-width: 425px) {
+    font-size: 12px !important;
+  }
 }
 
 .job-description li::before {
@@ -320,6 +394,10 @@ body * {
   padding-bottom: 16px;
   font-size: 15px;
   color: var(--slate);
+
+  @media (max-width: 425px) {
+    font-size: 13px;
+  }
 }
 
 .job-description {
@@ -357,6 +435,20 @@ body * {
   width: 250px !important;
   font-weight: 100 !important;
   letter-spacing: 1.05px !important;
+
+  @media screen and (max-width: 425px) {
+    width: 400px !important;
+    font-size: 12px !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.MuiBox-root {
+  margin-left: 0.98rem !important;
+  @media screen and (max-width: 425px) {
+    padding-left: 0 !important;
+  }
 }
 
 .MuiButtonBase-root:focus {

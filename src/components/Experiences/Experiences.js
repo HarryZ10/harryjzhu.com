@@ -100,7 +100,7 @@ export default function Experiences() {
         "Documented current security features on 20+ hardware/network servers that maintain the necessary infrastructure to sustain an efficient security posture"
       ]
     },
-    'Gameheads 2020': {
+    'Gameheads \'20': {
       jobTitle: "Project Manager & Gameplay Engineer @",
       duration: "MAY 2020 - DEC 2020",
       desc: [
@@ -109,7 +109,7 @@ export default function Experiences() {
         "Corresponded with 11 stakeholders and 9 experts for A/B testing for the minimum viable prototype stages in development"
       ]
     },
-    'Gameheads 2019': {
+    'Gameheads \'19': {
       jobTitle: "Lead Game Designer @",
       duration: "MAY 2019 - DEC 2019",
       desc: [
@@ -127,7 +127,7 @@ export default function Experiences() {
         "Received coaching and major networking support from technicians and engineers"
       ]
     },
-    "EBMUD": {
+    "EBMUD Water": {
       jobTitle: "Data Analyst Intern @",
       duration: "JUNE 2018 - JULY 2018",
       desc: [
@@ -136,7 +136,7 @@ export default function Experiences() {
         "Contributed to a medium-risk research project by reviewing 200+ physical records in the Archival department, marking 50+ keywords and phrases for investigative processes into executive leadership and their legislative and business actions"
       ]
     },
-    "College Track": {
+    "CT Oakland": {
       jobTitle: "Administrative Intern @",
       duration: "JAN 2017 - JUNE 2017",
       desc: [

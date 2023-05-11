@@ -4,14 +4,28 @@ export const Img = styled.img`
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 110px;
+  }
 `
 
 export const BlogCard = styled.div`
+  padding-top: 3rem;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 10px 15px 25px rgba(80, 78, 78, 0.5);
   text-align: center;
   margin-bottom: 5rem;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 3.6rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 98%;
+  }
 `;
 
 
@@ -27,14 +41,14 @@ export const HeaderThree = styled.h3`
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #637a87;
   padding: .5rem 0;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
   cursor: pointer;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   &:hover {
-    color: #fff;
+    color: #c4e9ff;
     transform: scaleX(1);
   }
 
@@ -46,7 +60,7 @@ export const HeaderThree = styled.h3`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #637a87;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -111,14 +125,17 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: ${(props) => props.modal ? '#000' : '#dce3e7'};
+  color: ${(props) => props.modal ? '#000' : '#a8b2d1'};
   font-style: 2rem;
+  padding-top: 1rem;
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
-}
+    padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+    line-height: 22px;
+  }
 `;
 
 
@@ -131,24 +148,30 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
-transition: 0.5s;
-&:hover{
-  background: #801414;
-}
-margin-bottom: 3rem;
+  color:#d4c0c0;
+  font-size: 1.6rem;
+  padding:1rem 1.5rem;
+  background: #6b3030;
+  border-radius: 15px;
+  transition: 0.5s;
+  &:hover{
+    background: #801414;
+  }
+  margin-bottom: 3rem;
 `;
 
 export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
+  color: #d8bfbf;
+  font-size: 1.5rem;
+
+  // mobile screen 425
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: .01rem .3rem;
+    font-size: 1.2rem;
+  }
 `
