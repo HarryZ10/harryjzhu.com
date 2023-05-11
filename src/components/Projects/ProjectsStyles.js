@@ -15,6 +15,7 @@ export const Img = styled.img`
 export const BlogCard = styled.div`
   padding-top: 3rem;
   border-radius: 10px;
+  background-color: #13171c;
   box-shadow: 10px 15px 25px rgba(80, 78, 78, 0.5);
   text-align: center;
   margin-bottom: 5rem;
@@ -27,6 +28,7 @@ export const BlogCard = styled.div`
     padding-top: 0 !important;
     margin-top: 3rem !important;
     width: 98%;
+    box-shadow: 0 0 0 !important;
   }
 `;
 
