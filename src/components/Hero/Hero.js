@@ -18,7 +18,7 @@ const Hero = (props) => (
     <LeftSection>
       <SkeletalCircle />
       <FadeIn>
-        <SectionTitle main center>
+        <SectionTitle main center heroTitle>
           Hi, I'm <FirstName>Harry</FirstName>.
         </SectionTitle>
       </FadeIn>

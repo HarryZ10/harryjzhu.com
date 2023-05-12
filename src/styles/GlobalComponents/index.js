@@ -39,6 +39,26 @@ export const SectionTitle = styled.h2`
   margin-bottom: ${(props) => props.projectHeading ? '52px' : '16px' };
   padding: ${(props) => props.main ? '28px 0 16px' : '0'};
   
+  // if has prop heroTitle, then apply shine animation
+  ${(props) => props.heroTitle && `
+    width: max-content;
+    max-width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgb(62, 136, 178) 65%,
+      rgb(115, 192, 247) 1%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 2.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+  `}
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
