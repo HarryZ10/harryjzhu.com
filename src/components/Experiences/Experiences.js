@@ -2,20 +2,10 @@ import React, { useState, useEffect } from "react";
 import {
   Section,
   SectionDivider,
-  SectionSubText,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { Hr, Hr2 } from "../Projects/ProjectsStyles";
-import {
-  List,
-  ListContainer,
-  ListItem,
-  ListParagraph,
-  ListTitle,
-} from "./ExperienceStyles";
 import FadeIn from "../FadeIn/FadeIn";
-
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -158,7 +148,7 @@ export default function Experiences() {
         development, including design patterns, frameworks, and libraries.
       </SectionText>
       <Box
-        sx={{ flexGrow: 1, bgcolor: '#131214', display: 'flex', height: '100%', width:'100%' }}
+        sx={{ flexGrow: 1, bgcolor: '#131214', display: 'flex', height: '100%', width: '100%' }}
       >
         <Tabs
           orientation="vertical"

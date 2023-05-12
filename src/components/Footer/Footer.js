@@ -17,26 +17,38 @@ import {
   SocialContainer,
   SocialIconsContainer,
 } from "./FooterStyles";
+import { Hr } from "../Projects/ProjectsStyles";
+import FadeIn from "../FadeIn/FadeIn";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Work Email</LinkTitle>
-          <LinkItem
-            href="mailto:hzhu20@georgefox.edu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hzhu20 at georgefox dot edu
-          </LinkItem>
+          <FadeIn>
+            <LinkTitle>Work Email</LinkTitle>
+          </FadeIn>
+          <FadeIn>
+            <LinkItem
+              href="mailto:hzhu20@georgefox.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              harryzhu45@gmail.com
+            </LinkItem>
+          </FadeIn>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
-        <CompanyContainer>
-          <Slogan>Made with Javascript libraries, Next and React</Slogan>
-        </CompanyContainer>
+        <FadeIn>
+          <CompanyContainer>
+            <Slogan>
+              Designed and built by Harry Zhu.
+              <br />
+              All Rights Reserved &copy; {new Date().getFullYear()}
+            </Slogan>
+          </CompanyContainer>
+        </FadeIn>
         <SocialContainer>
           <SocialIcons
             href="https://github.com/HarryZ10"
