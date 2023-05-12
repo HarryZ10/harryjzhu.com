@@ -13,7 +13,7 @@ export const Img = styled.img`
 `
 
 export const BlogCard = styled.div`
-  padding-top: 3rem;
+  padding-top: 0;
   border-radius: 10px;
   background-color: #13171c;
   box-shadow: 10px 15px 25px rgba(80, 78, 78, 0.5);
