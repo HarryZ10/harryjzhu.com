@@ -24,8 +24,7 @@ const Hero = (props) => (
       </FadeIn>
       <FadeIn>
         <SectionText>
-          I'm an aspiring security-focused and telemetry-driven software engineer
-          based in the Bay Area.
+          I am an aspiring data-driven and security-minded software engineer in the Bay Area.
         </SectionText>
       </FadeIn>
       <FadeIn>
