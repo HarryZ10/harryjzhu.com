@@ -54,6 +54,13 @@ export default function Experiences() {
   };
 
   const experienceItems = {
+    "Liminal Insights": {
+      jobTitle: "Software Engineer Intern @",
+      duration: "JUN 2023 - PRESENT",
+      desc: [
+        "TBD"
+      ]
+    },
     "George Fox": {
       jobTitle: "Full-Stack Web Developer Intern @",
       duration: "AUG 2021 - PRESENT",
@@ -126,7 +133,7 @@ export default function Experiences() {
         "Contributed to a medium-risk research project by reviewing 200+ physical records in the Archival department, marking 50+ keywords and phrases for investigative processes into executive leadership and their legislative and business actions"
       ]
     },
-    "CT Oakland": {
+    "College Track": {
       jobTitle: "Administrative Intern @",
       duration: "JAN 2017 - JUNE 2017",
       desc: [
