@@ -10,6 +10,10 @@ export default function App({ Component, pageProps }) {
         <title>Hello, I'm Harry!</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        {/* Favicon */}
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="favicon.png" />
+
         <meta
           name="description"
           content="Harry Zhu is a full-stack web developer based in Oakland, CA seeking to build community and cultivate leaders through software."
