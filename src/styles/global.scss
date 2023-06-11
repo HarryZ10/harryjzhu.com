@@ -27,7 +27,11 @@ html *,
 body * {
   cursor: none;
 }
-f
+
+*:hover {
+  cursor: none !important;
+}
+
 .carousel-projects {
   width: 75%;
   margin: 0 auto;
