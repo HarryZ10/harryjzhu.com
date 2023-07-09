@@ -54,14 +54,17 @@ export default function Experiences() {
   };
 
   const experienceItems = {
-    "Liminal Insights": {
+    "Liminal": {
       jobTitle: "Software Engineer Intern @",
       duration: "JUN 2023 - PRESENT",
       desc: [
-        "TBD"
+        "Architecting and developing an abstract feature toggle service to manage behavior-driven feature flags for the Liminal Insights Echo Stat™ platform",
+        "Implementing 2+ technological solutions to suppress and resolve bugs in the Echo Stat™ platform",
+        "Many of the bugs include: race condition between OPC-UA hardware commands and the subscriber, embedding configurations into the Echo Stat™ platform, and many more to come!",
+        "Fun things: Connecting with 7+ other interns on the software and data team, discovering new technologies, and going on lunches and coffee runs with the team!"
       ]
     },
-    "George Fox": {
+    "George Fox Uni": {
       jobTitle: "Full-Stack Web Developer Intern @",
       duration: "AUG 2021 - PRESENT",
       desc: [
@@ -71,7 +74,7 @@ export default function Experiences() {
         "Demonstrated collaboration and communication skills that influenced the reduction of the product backlog by 75%"
       ]
     },
-    "CS Dept - GFU": {
+    "GFU CSIS": {
       "jobTitle": "Computer Science Teaching Assistant @",
       "duration": "AUG 2022 - PRESENT",
       "desc": [
