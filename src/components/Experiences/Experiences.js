@@ -54,27 +54,28 @@ export default function Experiences() {
   };
 
   const experienceItems = {
-    "Liminal": {
+    "GFU MarCom": {
+      jobTitle: "Junior Web Developer @",
+      duration: "AUG 2021 - MAY 2024",
+      desc: [
+        "Produced 50+ web pages to resolve 100+ support tickets and help to increase user conversions by 50%",
+        "Engineered over 15+ REST-driven data pipelines in Node.js and Apache Velocity, enabling real-time data retrieval from the on-system CMS and reducing web page maintenance and manual building time by 99%",
+        "Expanded content development by 95% with 10+ data-driven automation scripts to validate internal and routine digital management actions, such as auditing, publishing, creating, and editing web pages or sections programmatically",
+        "Leveraged advanced skill in responsive design and front-end development (HTML, CSS, JavaScript) using Adobe XD to overhaul 10% of the most promoted pages, enhancing user experience and site performance by 50%"
+      ]
+    },
+    Liminal: {
       jobTitle: "Software Engineer Intern @",
-      duration: "JUN 2023 - PRESENT",
+      duration: "JUN 2023 - AUG 2023",
       desc: [
-        "Architecting and developing an abstract feature toggle service to manage behavior-driven feature flags for the Liminal Insights Echo Stat™ platform",
-        "Implementing 2+ technological solutions to suppress and resolve bugs in the Echo Stat™ platform",
-        "Many of the bugs include: race condition between OPC-UA hardware commands and the subscriber, embedding configurations into the Echo Stat™ platform, and many more to come!",
-        "Fun things: Connecting with 7+ other interns on the software and data team, discovering new technologies, and going on lunches and coffee runs with the team!"
+        "Architected an internal and on-system feature management service to increase the integration of behavior-driven development by 50% and to support 10+ switchable feature settings on the flagship software platform, EchoStat®",
+        "Designed the full-stack product extension using React.js and Postgres that uses in-house REST services to isolate the 10+ feature settings quickly without manual configuration to deploy the EchoStat® product onto customer sites",
+        "Maintained battery cell test throughput while keeping all log messages of all levels by offloading the synchronous runtime logs into a pub/sub communication protocol using the asynchronous messaging library, ZeroMQ",
+        "Refactored the OPC to Redis communication mechanism, leading to a 20% increase in improved stability of EchoStat® and its physical connectivity with the network to its native hardware field devices",
+        "Fun things: Connected with six other interns on the software and data team, discovered new technologies, and went on many lunches and coffee runs with the team!"
       ]
     },
-    "George Fox Uni": {
-      jobTitle: "Full-Stack Web Developer Intern @",
-      duration: "AUG 2021 - PRESENT",
-      desc: [
-        "Developed 10+ Node scripts to automate routine and internal tasks, boosting efficiency and reliability",
-        "Created large-scale content using CSS, HTML, and Apache Velocity (Java) for the University website",
-        "Updated 95+ webpages in response to more than 106 stakeholders' requests to implement new content and styling in accordance with their acceptance criteria",
-        "Demonstrated collaboration and communication skills that influenced the reduction of the product backlog by 75%"
-      ]
-    },
-    "GFU CSIS": {
+    "GFU CS Dept": {
       "jobTitle": "Computer Science Teaching Assistant @",
       "duration": "AUG 2022 - PRESENT",
       "desc": [
@@ -100,8 +101,8 @@ export default function Experiences() {
         "Documented current security features on 20+ hardware/network servers that maintain the necessary infrastructure to sustain an efficient security posture"
       ]
     },
-    'Gameheads \'20': {
-      jobTitle: "Project Manager & Gameplay Engineer @",
+    'Gameheads 6.0': {
+      jobTitle: "Game Engineer (& Project Manager) @",
       duration: "MAY 2020 - DEC 2020",
       desc: [
         "Enforced Scrum, industry project management frameworks, and 120+ deliverables, issues, and feedback for a cross-functional team of seven",
@@ -109,7 +110,7 @@ export default function Experiences() {
         "Corresponded with 11 stakeholders and 9 experts for A/B testing for the minimum viable prototype stages in development"
       ]
     },
-    'Gameheads \'19': {
+    'Gameheads 5.0': {
       jobTitle: "Lead Game Designer @",
       duration: "MAY 2019 - DEC 2019",
       desc: [
@@ -119,7 +120,7 @@ export default function Experiences() {
       ]
     },
     "UC Berkeley": {
-      jobTitle: "Information Technology Intern @",
+      jobTitle: "Network Engineer Intern @",
       duration: "FEB 2019 - MAY 2019",
       desc: [
         "Upgraded and reimaged 10+ workstations in academic centers that affected 7000+ on-campus residents",
@@ -127,7 +128,7 @@ export default function Experiences() {
         "Received coaching and major networking support from technicians and engineers"
       ]
     },
-    "EBMUD Water": {
+    EBMUD: {
       jobTitle: "Data Analyst Intern @",
       duration: "JUNE 2018 - JULY 2018",
       desc: [
