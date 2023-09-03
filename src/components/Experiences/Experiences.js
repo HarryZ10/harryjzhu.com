@@ -55,7 +55,7 @@ export default function Experiences() {
 
   const experienceItems = {
     "GFU MarCom": {
-      jobTitle: "Software Engineer Intern (Web & DevOps) @",
+      jobTitle: "Web Engineer Intern (Web & DevOps) @",
       duration: "AUG 2021 - MAY 2024",
       desc: [
         "Produced 50+ web pages to resolve 100+ support tickets and help to increase user conversions by 50%",
