@@ -64,6 +64,13 @@ export default function Experiences() {
         "Leveraged advanced skill in responsive design and front-end development (HTML, CSS, JavaScript) using Adobe XD to overhaul 10% of the most promoted pages, enhancing user experience and site performance by 50%"
       ]
     },
+    "GFU CS Dept": {
+      "jobTitle": "UG Computer Science Teaching Assistant @",
+      "duration": "AUG 2022 - MAY 2024",
+      "desc": [
+        "Tutored and monitored performance of students about introductory computer science concepts such as Data Structures, Relational Databases, Object-Oriented Design, and Analysis of Algorithms. Languages composed of Python, Java, Scala, and C/C++."
+      ]
+    },
     Liminal: {
       jobTitle: "Software Engineer Intern @",
       duration: "JUN 2023 - AUG 2023",
@@ -75,39 +82,32 @@ export default function Experiences() {
         "Fun things: Connected with six other interns on the software and data team, discovered new technologies, and went on many lunches and coffee runs with the team!"
       ]
     },
-    "GFU CS Dept": {
-      "jobTitle": "Computer Science Teaching Assistant @",
-      "duration": "AUG 2022 - PRESENT",
-      "desc": [
-        "Tutored and monitored performance of students about introductory computer science concepts such as Data Structures, Relational Databases, Object-Oriented Design, and Analysis of Algorithms. Languages composed of Python, Java, Scala, and C/C++."
-      ]
-    },
     Recidiviz: {
       jobTitle: "Software Engineering Intern @",
       duration: "JUNE 2022 - AUG 2022",
       desc: [
-        "Developed and deployed Python cloud scripts to audit for user admin privileges for 16+ vendors",
-        "Implemented JSX/Javascript solutions to resolve 26 vulnerabilities in the primary data platform and dismiss 192 irrelevant security alerts found using continuous integration workflows with open-source code scanning tools (Dockle, Trivy, and CodeQL)",
-        "Led the 90% increase of (12+) new security controls with cloud log-based metrics to alert the security team of all cloud events during staging deployment to production"
+        "Pioneered a command line interface of 20+ automation scripts that performs comprehensive login and IAM group policy audits and reports elevated privileges in 17 B2B platforms, reducing manual verification time by 99%",
+        "Resolved 100% of CodeQL security alerts in the production environment that was found to be OWASP’s top ten vulnerabilities discovered in popular enterprise software and codebases",
+        "Built a pipeline of three automation scripts utilizing pub/sub listeners that boosted the transparency of alerts across disparate cloud environments by 90%, implementing 20+ hardening measures set by the Center for Internet Security",
+        "Empowered standard security benchmarks by 20% to integrate multi-factor authentication corporate security policies"
       ]
     },
     'NW Natural': {
       jobTitle: "Security Analyst Intern @",
       duration: "MAY 2021 - AUG 2021",
       desc: [
-        "Assessed and built efficient Splunk queries, reports, dashboards, and alerts to maximize cybersecurity readiness & productivity by 30%",
-        "Reviewed and analyzed millions of internal system events, 2,300+ security alerts, and network activity for potential threats and risks, boosting cyber security readiness of the organization by 30%",
-        "Developed and deployed various cybersecurity/IT policies and procedures in the organization",
-        "Documented current security features on 20+ hardware/network servers that maintain the necessary infrastructure to sustain an efficient security posture"
+        "Developed and deployed 6 SQL scripts, resulting in a 50% decrease in average response time for identifying suspicious login activity and enhancing security measures for privileged IT systems",
+        "Created six interactive dashboards and real-time alerts based on national security benchmarks in software systems, supporting a 10% reduction in incident response time",
+        "Assessed 100% of internal cybersecurity procedures, ensuring compliance with frameworks like NIST and ISO 27001"
       ]
     },
     'Gameheads 6.0': {
       jobTitle: "Game Engineer (& Project Manager) @",
       duration: "MAY 2020 - DEC 2020",
       desc: [
-        "Enforced Scrum, industry project management frameworks, and 120+ deliverables, issues, and feedback for a cross-functional team of seven",
-        "Implemented and deployed C# scripts for UI elements, animations, dialogue, music, visual add-ons, and event systems",
-        "Corresponded with 11 stakeholders and 9 experts for A/B testing for the minimum viable prototype stages in development"
+        "Led a 50% reduction in UI load time by engineering UI/UX flows and internal backend connectivity services",
+        "Orchestrated management of 120+ pull requests using Trello, contributing to a 95% achievement rate per sprint",
+        "Performed 20+ test verifications for 5+ game features in line with the team's OKRs, and engaged in A/B testing with 23+ stakeholders, resulting in a 70% enhancement to UX quality and level metrics, up to the published demo build"
       ]
     },
     'Gameheads 5.0': {
@@ -119,36 +119,7 @@ export default function Experiences() {
         "Implemented and deployed the feature for the Players’s ability to eat and complete objectives"
       ]
     },
-    "UC Berkeley": {
-      jobTitle: "Network Engineer Intern @",
-      duration: "FEB 2019 - MAY 2019",
-      desc: [
-        "Upgraded and reimaged 10+ workstations in academic centers that affected 7000+ on-campus residents",
-        "Collaboratively helped set up and monitored 10+ network switches in 5+ academic lecture halls and 3 campus retail stores",
-        "Received coaching and major networking support from technicians and engineers"
-      ]
-    },
-    EBMUD: {
-      jobTitle: "Data Analyst Intern @",
-      duration: "JUNE 2018 - JULY 2018",
-      desc: [
-        "Queried and extracted 10,000+ PPI, water consumption per day, wastewater usage, and finance charges from the organizational customer database using SQL and PL/SQL",
-        "Performed critical data entry for edge cases on the jurisdiction border of the Utility's district, along with additional research to populate 3,000+ cells regarding tax information and APN values",
-        "Contributed to a medium-risk research project by reviewing 200+ physical records in the Archival department, marking 50+ keywords and phrases for investigative processes into executive leadership and their legislative and business actions"
-      ]
-    },
-    "College Track": {
-      jobTitle: "Administrative Intern @",
-      duration: "JAN 2017 - JUNE 2017",
-      desc: [
-        "Conducted research and compiled student data for academic program evaluations, resulting in improved program efficiency and effectiveness",
-        "Organized physical records chronologically, resulting in a 50% improvement in retrieval time and a 100% decrease of outdated documents",
-        "Categorized 30,000+ emails that was in the director's inbox using relevant labels, resulting in improved email management and a 50% reduction in response time.",
-        "Surveyed 20+ laptop & electronic resources, leading to identification of areas for optimization"
-      ]
-    }
   };
-
 
   return (
     <Section id="tech">
