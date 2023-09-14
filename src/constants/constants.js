@@ -45,7 +45,7 @@ export const projects = [
     description: "A hackathon dashboard for ACM @ GFU, where students will work collaboratively on a team to build a technical project in 30 hours.",
     image: '/images/6.png',
     tags: ['Winner', 'React', 'Node', 'Python', 'API', 'Firebase'],
-    visit: 'https://live.foxacmw.com',
+    visit: 'https://live-foxacmw-com.vercel.app/',
     id: 4,
     summary: 'A weekend-long hackathon, hosted by ACM @ GFU, where students will work collaboratively on a team to build a technical project in 30 hours.',
     duties: "In my role as Head of Marketing from 2021-22, I was responsible for delivering weekly test and release of over 5 production builds for ACM-associated websites, utilizing the primary technology stack which included React, Node, and Express. My efforts in this area ensured that ACM was being advertised effectively to its target audience. Additionally, I created and maintained over 3 brand posts per week to promote and market club events to more than 2000 George Fox UG students on social media platforms, such as Instagram and LinkedIn. By doing so, I was able to generate a significant level of engagement and interest in the club's activities among the university's student body. Through my work, I was able to increase ACM's visibility and promote its events to a wider audience, thereby contributing to its overall success.",
