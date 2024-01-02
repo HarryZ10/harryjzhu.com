@@ -1,6 +1,6 @@
 {
-  "name": "portfolio_nextjs",
-  "version": "0.1.0",
+  "name": "harryjzhu.com",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,22 +9,31 @@
     "postinstall": "cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib ./public"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@mui/material": "^5.9.2",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.0",
+    "@mui/styled-engine-sc": "^5.12.0",
     "bootstrap": "^5.2.0",
     "framer-motion": "^6.3.3",
     "next": "12.1.6",
+    "p5": "^1.6.0",
     "pspdfkit": "^2022.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-fetch-hook": "^1.9.5",
     "react-icons": "^4.2.0",
     "react-loader-spinner": "^6.0.0-0",
+    "react-p5-wrapper": "^4.1.2",
     "react-responsive-carousel": "^3.2.23",
     "sass": "^1.51.0",
     "simplebar-react": "^2.3.7",
-    "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7"
+    "styled-components": "^5.3.10",
+    "styled-normalize": "^8.0.7",
+    "three": "^0.152.2",
+    "threejs-toys": "^0.0.8"
+  },
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.11.0"
   }
 }
