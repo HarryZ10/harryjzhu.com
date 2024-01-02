@@ -19,6 +19,21 @@ function Projects() {
   const project5Ref = useRef();
   //#endregion
 
+  const getProjectRef = (index) => {
+    switch (index) {
+      case 0:
+        return project1Ref;
+      case 1:
+        return project2Ref;
+      case 2:
+        return project3Ref;
+      case 3:
+        return project4Ref;
+      case 4:
+        return project5Ref;
+    }
+  }
+
   return (
     <Section id="projects">
 
@@ -26,8 +41,8 @@ function Projects() {
       <SectionTitle main projectHeading>Projects</SectionTitle>
 
       {/* 11 Years */}
-      {projects.map(({title, duties, accomplishments, userResearch, img}, index) => (
-        <ProjectModal ref={index === 0 ? project1Ref : index === 1 ? project2Ref : index === 2 ? project3Ref : index === 3 ? project4Ref : project5Ref}>
+      {projects.map(({duties, accomplishments, userResearch, img}, index) => (
+        <ProjectModal ref={getProjectRef(index)}>
 
           {duties !== undefined && (
             <>
@@ -68,12 +83,11 @@ function Projects() {
 
       <Carousel showArrows={true} className="carousel-projects" showStatus={false}>
         {/* Mapping through projects array and creating a card for each project */}
-        {projects.map(({id , description, image, title, tags, source, visit, summary, duties, accomplishments, userResearch, img }) => (
+        {projects.map(({id , description, image, title, tags, source, visit }) => (
           <BlogCard key={id}>
             
             {/* if image is not undefined, then display image */}
-            {image !== undefined && (
-              
+            {image !== undefined && ( 
               <Img className='project-image' src={image} />
             )}
 
