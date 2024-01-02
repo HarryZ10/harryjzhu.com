@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import ProjectModal from './ProjectModal';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Carousel } from 'react-responsive-carousel';
 import { BlogCard, CardInfo, ExternalLinks, HeaderThree, HeaderThreeModal, Hr,Tag,
          TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
