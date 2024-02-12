@@ -11,12 +11,12 @@ const Timeline = () => {
         <SectionTitle main>About Me</SectionTitle>
         <FadeIn>
           <SectionText>
-            As a life-long learner, I dwindle in all things technology: websites, cloud computing, and security. As a product of the OUSD public education system, I hope to propel positive incremental changes through software development to uproot and uplift issues in my community.
+            As a lifelong learner in the tech space, these are the key areas that linger: front-end and backend development, cloud computing, and DevOps. I consider myself to be a "generalist" that seeks to incorporate my background in web and games to develop software or infrastructure of software systems that gives back to the community I came from. 
           </SectionText>
         </FadeIn>
         <FadeIn>
           <SectionText>
-            I am coachable and receptive to feedback. From projects to courses, I've gained tools for maintaining agile development, marketing design, risk assessment, gap analyses, road mapping, troubleshooting, and automation techniques. I have an adaptable and nimble mentality to learn and widen my skill set as I continue my curriculum and experience at George Fox and extracurricular associations to acquire new professional experiences.
+            As a product of the public education system in California, I have maintained a diverse skill set for agile development, software requirements gathering, risk assessment, gap analyses, road mapping, technical troubleshooting, and automation techniques using Unix/Linux. Lastly, I have an adaptable and nimble mentality to learn and widen my skill set as I continue my path to software engineering to acquire new professional experiences that is advantageous to the community wherever I am at.
           </SectionText>
         </FadeIn>
       </FadeIn>
