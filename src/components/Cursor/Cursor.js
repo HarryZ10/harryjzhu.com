@@ -143,7 +143,7 @@ function Cursor() {
      * @param {number} time
      */
     const animateDotOutline = time => {
-        if (previousTimeRef.current !== undefined && cursorDotOutline.current) {
+        if (previousTimeRef.current !== undefined) {
             x += (endX - x) / 8;
             y += (endY - y) / 8;
             cursorDotOutline.current.style.top = y + "px";

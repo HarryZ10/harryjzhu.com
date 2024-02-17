@@ -2,7 +2,7 @@
 :root {
   --color-cursor: 220, 90, 90;
   --cursor-outline-shade: 0.3;
-  --cursor-size: 20px;
+  --cursor-size: 12px;
   --cursor-outline-size: 22px;
   --dark-navy: #020c1b;
   --navy: #0a192f;
@@ -339,6 +339,10 @@ body * {
   width: var(--cursor-outline-size);
   height: var(--cursor-outline-size);
   background: linear-gradient(270deg, rgba(255, 173, 199, 0.4) 0%, rgba(148, 93, 214, 0.4) 100%);
+
+  @media (max-width: 768px) {
+     background: none !important;
+  }
 }
 
 .MuiTabs-indicator {

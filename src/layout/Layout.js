@@ -7,22 +7,6 @@ import { Container } from "./LayoutStyles";
 
 export const Layout = ({ children }) => {
   const [isVisible, setIsVisible] = React.useState(true);
-  
-  const [isWideEnough, setIsWideEnough] = React.useState(false); // Default to false
-
-  React.useEffect(() => {
-    setIsWideEnough(window.innerWidth >= 758);
-
-    const handleResize = () => {
-      setIsWideEnough(window.innerWidth >= 758);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup function to remove the event listener
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
 
   React.useEffect(() => {
     const timeout = setTimeout(() => {
@@ -36,7 +20,7 @@ export const Layout = ({ children }) => {
 
   return (
     <Container>
-      {isWideEnough && <Cursor />}
+      <Cursor />
       <NotionAlert isVisible={isVisible} />
       <Header />
       <main>{children}</main>
