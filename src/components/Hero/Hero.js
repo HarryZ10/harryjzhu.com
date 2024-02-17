@@ -19,7 +19,7 @@ const Hero = (props) => (
 				<SectionText>
 					I'm a <strong style={{ color: 'gold' }}>human-centered</strong>,{' '}
 					<strong style={{ color: 'lightblue' }}>data-driven</strong>,{" "} and{" "}
-					<strong style={{ color: 'pink' }}>security-minded </strong> software engineering intern based in the Bay Area.
+					<strong style={{ color: 'pink' }}>security-minded </strong> software developer from Oakland, CA.
 				</SectionText>
 			</FadeIn>
 			<FadeIn>

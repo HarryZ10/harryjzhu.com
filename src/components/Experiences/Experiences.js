@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Section,
   SectionDivider,
@@ -54,31 +54,23 @@ export default function Experiences() {
   };
 
   const experienceItems = {
-    "GFU MarCom": {
-      jobTitle: "Web Developer Intern @",
+    University: {
+      jobTitle: "Web Software Development Intern @",
       duration: "AUG 2021 - MAY 2024",
       desc: [
-        "Produced 50+ web pages to resolve 100+ support tickets and help to increase user conversions by 50%",
-        "Engineered over 15+ REST-driven data pipelines in Node.js and Apache Velocity, enabling real-time data retrieval from the on-system CMS and reducing web page maintenance and manual building time by 99%",
-        "Expanded content development by 95% with 10+ data-driven automation scripts to validate internal and routine digital management actions, such as auditing, publishing, creating, and editing web pages or sections programmatically",
-        "Leveraged advanced skill in responsive design and front-end development (HTML, CSS, JavaScript) using Adobe XD to overhaul 10% of the most promoted pages, enhancing user experience and site performance by 50%"
+        "Spearheaded the implementation of 20+ data pipelines in Node.js, achieving a dramatic 99% reduction in manual build time and accelerating development workflows, optimizing operational efficiency and content delivery speed",
+        "Revamped 10% of content pages with HTML and CSS and support the retirement effort of 1,000+ legacy pages",
+        "Produced 100+ web pages with JavaScript, resulting in a 70% enhancement in stakeholder engagement" 
       ]
     },
-    "GFU CS Dept": {
-      "jobTitle": "UG Computer Science Teaching Assistant @",
-      "duration": "AUG 2022 - MAY 2024",
-      "desc": [
-        "Tutored and monitored performance of students about introductory computer science concepts such as Data Structures, Relational Databases, Object-Oriented Design, and Analysis of Algorithms. Languages composed of Python, Java, Scala, and C/C++."
-      ]
-    },
-    Liminal: {
+
+    Liminal : {
       jobTitle: "Software Engineer Intern @",
       duration: "JUN 2023 - AUG 2023",
       desc: [
-        "Architected an internal and on-system feature management service to increase the integration of behavior-driven development by 50% and to support 10+ switchable feature settings on the flagship software platform, EchoStat®",
-        "Designed the full-stack product extension using React.js and Postgres that uses in-house REST services to isolate the 10+ feature settings quickly without manual configuration to deploy the EchoStat® product onto customer sites",
-        "Maintained battery cell test throughput while keeping all log messages of all levels by offloading the synchronous runtime logs into a pub/sub communication protocol using the asynchronous messaging library, ZeroMQ",
-        "Refactored the OPC to Redis communication mechanism, leading to a 20% increase in improved stability of EchoStat® and its physical connectivity with the network to its native hardware field devices",
+        "Architected a feature flag service housing 7+ features using React.js and Flask with database connectivity, reducing manual software configuration time by 99% (e.g., developer pages, enabling fake hardware)",
+        "Optimized battery cell testing process efficiency by offloading 50+ synchronous log messages per minute using pub/subs and ZeroMQ, a messaging queue pattern",
+        "Refactored the OPC to Redis communication mechanism to resolve race conditions, leading to a 20% increase in improved network stability with PLC field devices",
         "Fun things: Connected with six other interns on the software and data team, discovered new technologies, and went on many lunches and coffee runs with the team!"
       ]
     },
@@ -86,23 +78,23 @@ export default function Experiences() {
       jobTitle: "Software Engineering Intern @",
       duration: "JUNE 2022 - AUG 2022",
       desc: [
-        "Pioneered a command line interface of 20+ automation scripts that performs comprehensive login and IAM group policy audits and reports elevated privileges in 17 B2B platforms, reducing manual verification time by 99%",
-        "Resolved 100% of CodeQL security alerts in the production environment that was found to be OWASP’s top ten vulnerabilities discovered in popular enterprise software and codebases",
-        "Built a pipeline of three automation scripts utilizing pub/sub listeners that boosted the transparency of alerts across disparate cloud environments by 90%, implementing 20+ hardening measures set by the Center for Internet Security",
+        "Pioneered a command module with 20+ API scripts that perform comprehensive IAM policy audits and reports elevated privileges in 17 B2B platforms, reducing manual verification time by 90%",
+        "Implemented a CI/CD pipeline for source code analysis (e.g., CodeQL), reducing found vulnerabilities by 100%",
+        "Built a pipeline of three automation scripts utilizing pub/sub that boosted transparency of alerts by 90% across disparate cloud environments, implementing 12+ security control measures and log metrics in Google Cloud",
         "Empowered standard security benchmarks by 20% to integrate multi-factor authentication corporate security policies"
       ]
     },
-    'NW Natural': {
+    "NW Natural": {
       jobTitle: "Security Analyst Intern @",
       duration: "MAY 2021 - AUG 2021",
       desc: [
-        "Developed and deployed 6 SQL scripts, resulting in a 50% decrease in average response time for identifying suspicious login activity and enhancing security measures for privileged IT systems",
-        "Created six interactive dashboards and real-time alerts based on national security benchmarks in software systems, supporting a 10% reduction in incident response time",
-        "Assessed 100% of internal cybersecurity procedures, ensuring compliance with frameworks like NIST and ISO 27001"
+        "Led a security inventory documentation effort of 20+ in-house hardware and external software servers that maintain the infrastructure for the organization",
+        "Developed 6 SQL queries, resulting in a 20% increase of identifying suspicious login activity in privileged systems",
+        "Created six interactive dashboards and real-time alerts, leading to a 10% reduction in incident response time"
       ]
     },
-    'Gameheads 6.0': {
-      jobTitle: "Game Engineer (& Project Manager) @",
+    "Gameheads '20": {
+      jobTitle: "Game Engineer @",
       duration: "MAY 2020 - DEC 2020",
       desc: [
         "Led a 50% reduction in UI load time by engineering UI/UX flows and internal backend connectivity services",
@@ -110,7 +102,7 @@ export default function Experiences() {
         "Performed 20+ test verifications for 5+ game features in line with the team's OKRs, and engaged in A/B testing with 23+ stakeholders, resulting in a 70% enhancement to UX quality and level metrics, up to the published demo build"
       ]
     },
-    'Gameheads 5.0': {
+    Gameheads: {
       jobTitle: "Lead Game Designer @",
       duration: "MAY 2019 - DEC 2019",
       desc: [
@@ -134,15 +126,14 @@ export default function Experiences() {
       >
         <Tabs
           orientation="vertical"
-          variant="scrollable"
           value={value}
           onChange={handleChange}
           textColor="#fff"
           aria-label="Vertical tabs example"
-          sx={{ borderRight: 1, borderColor: 'divider' }}
+          className="tabs-menu"
         >
           {Object.keys(experienceItems).map((key, index) => (
-            <Tab classname="MuiTab-wrapper" label={key} {...a11yProps(index)} />
+            <Tab className="MuiTab-wrapper" label={key} {...a11yProps(index)} />
           ))}
         </Tabs>
 
