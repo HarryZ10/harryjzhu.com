@@ -91,8 +91,7 @@ function Projects() {
             )}
 
             <TitleContent>
-              <HeaderThree title onClick={() => { turnModalOn(id) }}>
-                {/* <AiOutlineArrowRight style={{ paddingTop:'10px' }}/>  */}
+              <HeaderThree title='true' onClick={() => { turnModalOn(id) }}>
                 {title} 
               </HeaderThree>
               {/* <Hr /> */}

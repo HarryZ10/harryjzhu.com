@@ -5,17 +5,12 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillInfoCircle,
-  // AiFillMediumCircle,
+  AiFillMediumCircle,
 } from "react-icons/ai";
 
 import {
-  Span,
-  Dot,
   Container,
-  Div1,
-  Div2,
   Div3,
-  NavLink,
   SocialIcons,
 } from "./HeaderStyles";
 
@@ -36,15 +31,15 @@ const Header = () => (
       >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      {/* <SocialIcons
+      <SocialIcons
         href="https://medium.com/@byharryzhu"
         target="_blank"
         rel="noopener noreferrer"
       >
         <AiFillMediumCircle size="3rem" />
-      </SocialIcons> */}
+      </SocialIcons>
       <SocialIcons
-        href="https://iam.harryjzhu.com"
+        href="https://iam.harryzhu.com"
         target="_blank"
         rel="noopener noreferrer"
       >

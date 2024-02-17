@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="A Bay Area Software Developer's Portfolio of Works and Projects (Harry Zhu / Oakland, CA)"
         />
-        <meta itemprop="image" content="images/cover.jpg" />
+        <meta itemProp="image" content="images/cover.jpg" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
