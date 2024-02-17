@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
 
         <meta
           name="description"
-          content="A Bay Area Software Developer's Portfolio of Works and Projects (Harry Zhu / Oakland, CA)"
+          content="Full-Stack Software Developer Portfolio (Harry Zhu / Oakland, CA)"
         />
         <meta itemProp="image" content="images/cover.jpg" />
 
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:title" content="Harry Zhu" />
         <meta
           property="og:description"
-          content="A Bay Area Software Developer's Works and Projects (Harry Zhu / Oakland, CA)"
+          content="Full-Stack Software Developer Portfolio (Harry Zhu / Oakland, CA)"
         />
         <meta property="og:image" content="images/cover.jpg" />
       </Head>
