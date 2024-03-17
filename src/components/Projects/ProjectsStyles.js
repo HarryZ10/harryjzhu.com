@@ -19,7 +19,7 @@ export const BlogCard = styled.div`
   box-shadow: 10px 15px 25px rgba(80, 78, 78, 0.5);
   text-align: center;
   margin-bottom: 5rem;
-  width: 80%;
+  width: ${props => props.theme.breakpoints.sm ? "70%" : "100%"};
   margin: 0 auto;
   border-radius: 20px;
   margin-bottom: 3.6rem;

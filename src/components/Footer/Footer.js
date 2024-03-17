@@ -26,11 +26,11 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <FadeIn>
-            <LinkTitle>Work Email</LinkTitle>
+            <LinkTitle>How to Contact Me</LinkTitle>
           </FadeIn>
           <FadeIn>
             <LinkItem
-              href="mailto:hzhu20@georgefox.edu"
+              href="mailto:harryzhu45@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,7 +65,7 @@ const Footer = () => {
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons
-            href="https://iam.harryjzhu.com"
+            href="https://iam.harryzhu.com"
             target="_blank"
             rel="noopener noreferrer"
           >

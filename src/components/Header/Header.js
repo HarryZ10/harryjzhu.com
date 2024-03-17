@@ -16,7 +16,7 @@ import {
 
 const Header = () => (
   <Container>
-    <Div3>
+    <Div3 centered>
       <SocialIcons
         href="https://github.com/HarryZ10"
         target="_blank"

@@ -13,7 +13,7 @@ const NotionAlert = ({ isVisible }) => {
     if (running) {
       interval = setInterval(() => {
         setProgress((prev) => prev + 1);
-      }, 50);
+      }, 20);
     }
   }, [running]);
 

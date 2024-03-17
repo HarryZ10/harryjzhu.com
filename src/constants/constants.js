@@ -41,7 +41,7 @@ export const projects = [
     accomplishments: "Pickabox, an automatic organizer and random generator of wikis upon wikis, is a user-friendly web application where everyday Wikipedia users generate random Wikipedia pages on our platform. It is truly the organizational tool to help you keep track of what you’re reading and learning.",
   },
   {
-    title: 'Custom Event Portal',
+    title: 'ACM Chapter Portal',
     description: "A hackathon dashboard for ACM @ GFU, where students will work collaboratively on a team to build a technical project in 30 hours.",
     image: '/images/6.png',
     tags: ['React', 'Node', 'Gitlab API', 'Python', 'Rest API'],
@@ -49,5 +49,16 @@ export const projects = [
     id: 4,
     summary: 'A weekend-long hackathon, hosted by ACM @ GFU, where students will work collaboratively on a team to build a technical project in 30 hours.',
     duties: "In my role as Head of Marketing from 2021-22, I was responsible for delivering weekly test and release of over 5 production builds for ACM-associated websites, utilizing the primary technology stack which included React, Node, and Express. My efforts in this area ensured that ACM was being advertised effectively to its target audience. Additionally, I created and maintained over 3 brand posts per week to promote and market club events to more than 2000 George Fox UG students on social media platforms, such as Instagram and LinkedIn. By doing so, I was able to generate a significant level of engagement and interest in the club's activities among the university's student body. Through my work, I was able to increase ACM's visibility and promote its events to a wider audience, thereby contributing to its overall success.",
+  },
+  {
+    title: 'Journex Blog',
+    description: "A full-stack career blogging web-app.",
+    image: '/images/7.png',
+    tags: ['React', 'Typescript', 'PHP', 'PostgreSQL', 'Rest API'],
+    source: 'https://github.com/HarryZ10/Journex-Platform',
+    visit: 'https://github.com/HarryZ10/Journex-Platform',
+    id: 5,
+    summary: 'A career blogging web-app that allows user to post about their salary and benefits to track progress and give others pay transparency.',
+    duties: "I designed this during CSIS 314: Client-Server Systems for the final project. I decided to use Typescript and PHP to make the frontend and backend, respectively. I deployed this on the George Fox Apache web server, only accessible to the George Fox community, as of April 2024",
   },
 ];

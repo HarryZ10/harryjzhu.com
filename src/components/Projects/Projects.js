@@ -16,6 +16,7 @@ function Projects() {
   const project3Ref = useRef();
   const project4Ref = useRef();
   const project5Ref = useRef();
+  const project6Ref = useRef();
   //#endregion
 
   const getProjectRef = (index) => {
@@ -30,6 +31,8 @@ function Projects() {
         return project4Ref;
       case 4:
         return project5Ref;
+      case 5:
+        return project6Ref;
     }
   }
 
@@ -132,6 +135,8 @@ function Projects() {
       project4Ref.current.open();
     } else if (id === 4) {
       project5Ref.current.open();
+    } else if (id === 5) {
+      project6Ref.current.open();
     }
   }
 }

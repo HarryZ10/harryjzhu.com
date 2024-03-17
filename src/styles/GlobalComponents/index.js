@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   padding-top: ${(props) => props.blankSpace ? "0px" : "10px" } ;
-  padding-bottom: ${(props) => props.blankSpace ? "250px" : "50px" };
+  padding-bottom: ${(props) => props.blankSpace ? "52px" : "50px" };
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
@@ -36,12 +36,13 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: ${(props) => props.projectHeading ? '52px' : '16px' };
+  margin-bottom: ${(props) => props.projectHeading ? '32px' : '16px' };
   padding: ${(props) => props.main ? '28px 0 16px' : '0'};
   
   // if has prop heroTitle, then apply shine animation
   ${(props) => props.heroTitle && `
     width: max-content;
+    margin-top: ${(props) => props.theme.breakpoints.sm ? '50px': '0'};
     max-width: 100%;
     background: linear-gradient(
       90deg,

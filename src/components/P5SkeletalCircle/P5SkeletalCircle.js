@@ -18,7 +18,7 @@ const Sketch = p5 => {
     p5.clear();
     p5.translate(p5.width - 260, p5.height);
     branch(100, 2.4);
-    angle = p5.map(p5.cos(p5.frameCount * 0.02199), -2, 2, p5.PI / 2, p5.PI / 16);
+    angle = p5.map(p5.cos(p5.frameCount * 0.012199), -5, 2, p5.PI / 2, p5.PI / 16);
   }
 
   function branch(len, size) {

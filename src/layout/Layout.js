@@ -11,7 +11,7 @@ export const Layout = ({ children }) => {
   React.useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 5000);
+    }, 2000);
 
     return () => {
       clearTimeout(timeout);
@@ -20,10 +20,11 @@ export const Layout = ({ children }) => {
 
   return (
     <Container>
-      <Cursor />
       <NotionAlert isVisible={isVisible} />
       <Header />
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
       <Footer />
     </Container>
   );

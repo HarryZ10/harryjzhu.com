@@ -54,9 +54,16 @@ export default function Experiences() {
   };
 
   const experienceItems = {
+    // 'TRACE (Self-Employed)': {
+    //   jobTitle: "Software Engineer Consultant @",
+    //   duration: "MAR 2024 - Present",
+    //   desc: [
+    //     "Building TRACE product"
+    //   ]
+    // },
     University: {
-      jobTitle: "Web Software Development Intern @",
-      duration: "AUG 2021 - MAY 2024",
+      jobTitle: "Web Developer Intern (Software) @",
+      duration: "AUG 2021 - Present",
       desc: [
         "Spearheaded the implementation of 20+ data pipelines in Node.js, achieving a dramatic 99% reduction in manual build time and accelerating development workflows, optimizing operational efficiency and content delivery speed",
         "Revamped 10% of content pages with HTML and CSS and support the retirement effort of 1,000+ legacy pages",
