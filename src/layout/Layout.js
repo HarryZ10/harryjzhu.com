@@ -21,6 +21,7 @@ export const Layout = ({ children }) => {
   return (
     <Container>
       <NotionAlert isVisible={isVisible} />
+      <Cursor />
       <Header />
       <main>
         {children}

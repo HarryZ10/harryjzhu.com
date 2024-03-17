@@ -298,23 +298,6 @@
   }
 }
 
-#cursor-dot{
-  width: var(--cursor-size);
-  height: var(--cursor-size);
-  z-index: 1100;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  border: solid rgb(255, 173, 199);
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
-}
-
-
-
 .MuiTabs-indicator {
   background-color: #7dc0ff !important;
 
@@ -475,6 +458,30 @@
 
   .experience-job-company {
     font-size: 22px;
+  }
+}
+
+/* Cursor Outline */
+#cursor-dot-outline {
+  z-index: 1100;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+#cursor-dot-outline {
+  width: var(--cursor-outline-size);
+  height: var(--cursor-outline-size);
+  border: solid rgb(255, 173, 199);
+  border-width: 0.09rem !important;
+
+  @media (max-width: 768px) {
+     background: none !important;
   }
 }
 
