@@ -5,6 +5,7 @@ The project is structured to separate concerns and make it easy to maintain and 
 
 ## Project Structure
 
+```
 src/
 ├── components/    # Reusable UI components
 ├── layout/        # Layout components for page structure
@@ -16,6 +17,7 @@ src/
 public/
 ├── images/        # Image assets used in the project
 └── resume.pdf     # Resume file accessible publicly
+```
 
 ### `src` Directory
 
