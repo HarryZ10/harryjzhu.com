@@ -30,11 +30,11 @@ const Footer = () => {
           </FadeIn>
           <FadeIn>
             <LinkItem
-              href="mailto:harryzhu45@gmail.com"
+              href="mailto:hello@harryzhu.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              harryzhu45@gmail.com
+              hello@harryzhu.com
             </LinkItem>
           </FadeIn>
         </LinkColumn>
