@@ -83,7 +83,7 @@ function Projects() {
       ))}
 
 
-      <Carousel showArrows={true} className="carousel-projects" showStatus={false}>
+      <Carousel showArrows={true} className="carousel-projects" showStatus={false} showThumbs={false}>
         {/* Mapping through projects array and creating a card for each project */}
         {projects.map(({id , description, image, title, tags, source, visit }) => (
           <BlogCard key={id}>

@@ -43,9 +43,7 @@ const Footer = () => {
         <FadeIn>
           <CompanyContainer>
             <Slogan>
-              Designed and built by Harry Zhu.
-              <br />
-              All Rights Reserved &copy; {new Date().getFullYear()}
+              Have a challenge for me?
             </Slogan>
           </CompanyContainer>
         </FadeIn>

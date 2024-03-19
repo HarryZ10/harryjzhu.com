@@ -1,15 +1,14 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, FirstName } from './HeroStyles';
 import FadeIn from '../FadeIn/FadeIn';
+// import dynamic from 'next/dynamic';
 // const SkeletalCircle = dynamic(() => import('../P5SkeletalCircle/P5SkeletalCircle'), { ssr: false });
 
 const Hero = (props) => (
     <Section row nopadding blankSpace>
         <LeftSection>
-            {/* <SkeletalCircle /> */}
             <SectionTitle main center heroTitle>
                 Hi, I'm <FirstName>Harry</FirstName>.
             </SectionTitle>

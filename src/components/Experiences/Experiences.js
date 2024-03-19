@@ -54,68 +54,82 @@ export default function Experiences() {
   };
 
   const experienceItems = {
-    // 'TRACE (Self-Employed)': {
-    //   jobTitle: "Software Engineer Consultant @",
-    //   duration: "MAR 2024 - Present",
-    //   desc: [
-    //     "Building TRACE product"
-    //   ]
-    // },
-    University: {
-      jobTitle: "Web Developer Intern (Software) @",
+    'George Fox': {
+      key: 1,
+      jobTitle: "Web Developer Intern @",
       duration: "AUG 2021 - Present",
       desc: [
-        "Spearheaded the implementation of 20+ data pipelines in Node.js, achieving a dramatic 99% reduction in manual build time and accelerating development workflows, optimizing operational efficiency and content delivery speed",
-        "Revamped 10% of content pages with HTML and CSS and support the retirement effort of 1,000+ legacy pages",
-        "Produced 100+ web pages with JavaScript, resulting in a 70% enhancement in stakeholder engagement" 
+        "Engineered a monitoring tool using VueJS and NodeJS, reducing manual verification of content accuracy by 90%",
+        "Developed 20+ automation scripts in NodeJS, achieving a 99% reduction in manual build time down to 2-4 seconds",
+        "Optimized branding by building 100+ pages with HTML and CSS, supporting the retirement of 1,000+ legacy pages",
+        "Skills Used: VueJS, NodeJS, Python, HTML, CSS"
       ]
     },
-
-    Liminal : {
+    'TRACE': {
+      jobTitle: "Software Engineer Consultant (Contract) @",
+      link: 'https://traceyours.com',
+      duration: "MAR 2024 - Present",
+      desc: [
+        "Initiating active involvement in maintaining and enhancing TRACE to optimize the developer and user experience",
+        "Engaging in thorough debugging to rectify critical bugs, leading to more stable application performance",
+        "Skills Used: NextJS, MongoDB, React, Tailwind CSS"
+      ]
+    },
+    'Liminal Insights': {
+      key: 2,
       jobTitle: "Software Engineer Intern @",
       duration: "JUN 2023 - AUG 2023",
       desc: [
-        "Architected a feature flag service housing 7+ features using React.js and Flask with database connectivity, reducing manual software configuration time by 99% (e.g., developer pages, enabling fake hardware)",
+        "Architected a development platform using ReactJS and Flask, reducing manual software configuration time by 99%",
         "Optimized battery cell testing process efficiency by offloading 50+ synchronous log messages per minute using pub/subs and ZeroMQ, a messaging queue pattern",
-        "Refactored the OPC to Redis communication mechanism to resolve race conditions, leading to a 20% increase in improved network stability with PLC field devices",
-        "Fun things: Connected with six other interns on the software and data team, discovered new technologies, and went on many lunches and coffee runs with the team!"
+        "Stabilized uptime and data flow of 100+ OPC events, removing race conditions involving Redis subscriptions",
+        "Fun things: Connected with six other interns on the software and data team, discovered new technologies, and went on many lunches and coffee runs with the team!",
+        "Skills Used: NextJS, ReactJS, Python, Flask, Docker, Postgres, Redis, ØMQ"
       ]
     },
     Recidiviz: {
+      key: 3,
       jobTitle: "Software Engineering Intern @",
       duration: "JUNE 2022 - AUG 2022",
       desc: [
-        "Pioneered a command module with 20+ API scripts that perform comprehensive IAM policy audits and reports elevated privileges in 17 B2B platforms, reducing manual verification time by 90%",
-        "Implemented a CI/CD pipeline for source code analysis (e.g., CodeQL), reducing found vulnerabilities by 100%",
-        "Built a pipeline of three automation scripts utilizing pub/sub that boosted transparency of alerts by 90% across disparate cloud environments, implementing 12+ security control measures and log metrics in Google Cloud",
-        "Empowered standard security benchmarks by 20% to integrate multi-factor authentication corporate security policies"
+        "Built an access monitoring tool in Python, Docker, and GCP, reducing IAM audit time by 90% across 17 vendors",
+        "Introduced over 10 new security controls and alerts in infrastructure services across 3 disparate cloud environments",
+        "Resolved over 200 product vulnerabilities found in production by creating a CI/CD pipeline from SAST",
+        "Empowered standard security benchmarks by 95% to integrate multi-factor authentication corporate security policies",
+        "Skills Used: Python, Flask, Docker, GraphQL, Pub/Subs, Google Cloud"
       ]
     },
     "NW Natural": {
+      key: 4,
       jobTitle: "Security Analyst Intern @",
       duration: "MAY 2021 - AUG 2021",
       desc: [
-        "Led a security inventory documentation effort of 20+ in-house hardware and external software servers that maintain the infrastructure for the organization",
-        "Developed 6 SQL queries, resulting in a 20% increase of identifying suspicious login activity in privileged systems",
-        "Created six interactive dashboards and real-time alerts, leading to a 10% reduction in incident response time"
+        "Streamlined security protocols by documenting inventory for 20+ in-house software and hardware systems",
+        "Created a Splunk dashboard for real-time detection of suspicious logins and tracking pre-success failed attempts",
+        "Revamped enterprise knowledge sharing by overhauling 100+ legacy SharePoint files, enhancing process efficiency",
+        "Skills Used: Splunk Enterprise, Sharepoint"
       ]
     },
     "Gameheads '20": {
+      key: 5,
       jobTitle: "Game Engineer @",
       duration: "MAY 2020 - DEC 2020",
       desc: [
         "Led a 50% reduction in UI load time by engineering UI/UX flows and internal backend connectivity services",
         "Orchestrated management of 120+ pull requests using Trello, contributing to a 95% achievement rate per sprint",
-        "Performed 20+ test verifications for 5+ game features in line with the team's OKRs, and engaged in A/B testing with 23+ stakeholders, resulting in a 70% enhancement to UX quality and level metrics, up to the published demo build"
+        "Performed 20+ test verifications for 5+ game features in line with the team's OKRs, and engaged in A/B testing with 23+ stakeholders, resulting in a 70% enhancement to UX quality and level metrics, up to the published demo build",
+        "Skills Used: C#, Unity"
       ]
     },
     Gameheads: {
+      key: 6,
       jobTitle: "Lead Game Designer @",
       duration: "MAY 2019 - DEC 2019",
       desc: [
         "Established static and dynamic metrics such as movement speed, object animation speed, object spawn rate, and metric properties of player and enemy objects",
-        "Designed and prototyped 10+ versions of the level layout upon iterations of drafting player progression in a confined 3D marine world",
-        "Implemented and deployed the feature for the Players’s ability to eat and complete objectives"
+        "Designed and prototyped 10+ versions of the level layout upon iterations of drafting player progression",
+        "Implemented and deployed the feature for the Players’s ability to eat and complete objectives",
+        "Skills Used: C#, Unity"
       ]
     },
   };

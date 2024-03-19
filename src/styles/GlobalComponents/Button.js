@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { ButtonBack, ButtonFront } from './index'
 
 const Button = (props) => (
