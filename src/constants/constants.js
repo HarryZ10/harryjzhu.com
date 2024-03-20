@@ -56,7 +56,7 @@ export const projects = [
     image: '/images/7.png',
     tags: ['React', 'Typescript', 'PHP', 'PostgreSQL', 'Rest API'],
     source: 'https://github.com/HarryZ10/Journex-Platform',
-    visit: 'https://github.com/HarryZ10/Journex-Platform',
+    visit: 'https://blog.harryzhu.com/',
     id: 5,
     summary: 'A career blogging web-app that allows user to post about their salary and benefits to track progress and give others pay transparency.',
     duties: "I designed this during CSIS 314: Client-Server Systems for the final project. I decided to use Typescript and PHP to make the frontend and backend, respectively. I deployed this on the George Fox Apache web server, only accessible to the George Fox community, as of April 2024",
